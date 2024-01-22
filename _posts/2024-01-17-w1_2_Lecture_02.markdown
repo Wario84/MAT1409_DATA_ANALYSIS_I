@@ -1,0 +1,28 @@
+---
+
+layout: post
+title: "Lecture 2: Progresión Geométrica."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-01-17"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 1: Progresiones y series.**
+
+1.1 Progresión Geométrica.
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/FIN1403_02.html)
+
+
+<a href="https://downgit.github.io/#/home?url=https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/FIN1403_02.html" download>
+  Bajar Presentación
+</a>
