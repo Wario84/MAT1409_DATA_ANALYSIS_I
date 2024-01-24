@@ -29,5 +29,5 @@ mermaid: true
 
 # Tarea
 
-[Ir a la Tarea 01](https://forms.gle/mFGZ1TiRmqm2ho9E6)
+[Ir a la Tarea 1](https://forms.gle/mFGZ1TiRmqm2ho9E6)
 
