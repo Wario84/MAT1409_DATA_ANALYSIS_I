@@ -23,6 +23,6 @@ mermaid: true
 [Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/FIN1403_02.html)
 
 
-<a href="https://downgit.github.io/#/home?url=https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/FIN1403_02.html" download>
+<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/FIN1403_02.html" download>
   Bajar Presentación
 </a>
