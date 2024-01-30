@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 2: Progresión Geométrica."
+title: "Lecture 2: Introducción al Análisis de Datos."
 author: "Mario H. Gonzalez-Sauri"
 date: "2024-01-17"
 mermaid: true
@@ -13,16 +13,17 @@ mermaid: true
 # Temas
 
 
-**Tema 1: Progresiones y series.**
+**Tema 1: Introducción al Análisis de Datos.**
 
-1.1 Progresión Geométrica.
+1.1 Ciencia de datos, Tipos de variables y escalas de medición (1 sesión)
+
 
 # Presentación
 
 
-[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/FIN1403_02.html)
+[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/4_MAT1409_02.html)
 
 
-<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/FIN1403_02.html" download>
+<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/4_MAT1409_02.html" download>
   Bajar Presentación
 </a>
