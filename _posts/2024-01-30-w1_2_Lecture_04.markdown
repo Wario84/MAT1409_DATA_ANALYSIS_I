@@ -15,7 +15,7 @@ mermaid: true
 
 **Tema 2: Medidas de Tendencia Central (MTC).**
 
-2.5 Media Armónica
+2.5 Media Armónica.
 
 
 
