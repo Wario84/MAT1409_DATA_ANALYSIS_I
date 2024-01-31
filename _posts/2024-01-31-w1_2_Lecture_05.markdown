@@ -15,6 +15,7 @@ mermaid: true
 
 **Tema 2: Medidas de Tendencia Central (MTC).**
 
+
 2.6 Medidas de Posición.
 
 2.6.1 Mediana.
