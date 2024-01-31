@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 2: Introducción al Análisis de Datos."
+title: "Lecture 2: Variables y Escalas."
 author: "Mario H. Gonzalez-Sauri"
 date: "2024-01-17"
 mermaid: true
@@ -13,9 +13,19 @@ mermaid: true
 # Temas
 
 
-**Tema 1: Introducción al Análisis de Datos.**
+**Tema 1: Introducción a la estadística y análisis de datos.**
 
-1.1 Ciencia de datos, Tipos de variables y escalas de medición (1 sesión)
+ Tema 1.1 Tipos de Variables.
+
+ 1.1.1 Variables Numéricas Discretas.
+ 1.1.2 Variables Numéricas Continuas.
+ 1.2.3 Variables Categóricas.
+
+ Tema 1.2 Escalas de Medición.
+
+ 1.2.1 Logaritmo.
+ 1.2.2 Normalización Z.
+ 1.2.3 Raíz cuadrada estandarizada.
 
 
 # Presentación

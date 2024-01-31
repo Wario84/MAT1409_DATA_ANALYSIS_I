@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\_includes",
+    "\\_posts",
+    "\\_posts\\lectures"
   ],
-  "SelectedNode": "\\C:\\Users\\mglez\\Documents\\PHD\\Semester 17\\19092023_mayab\\Licenciatura en economia y negocios\\courseworks\\MAT1405_ANA_D_I\\blog",
+  "SelectedNode": "\\_posts\\lectures\\4_MAT1409_02.html",
   "PreviewInSolutionExplorer": false
 }

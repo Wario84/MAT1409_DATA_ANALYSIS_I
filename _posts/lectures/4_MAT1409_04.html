@@ -4248,8 +4248,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; }
 
 <ul>
 <li><p>Otra forma de atenuar valores extremos grandes es calculando su recíproco. \[\frac{1}{x}=x^{-1}\]</p></li>
-<li><p>Valores extremos grandes, \(+\) ó \(-\), \(\rightarrow\) recíprocos pequeños.</p></li>
-<li><p>Valores extremos pequeños, \(+\) ó \(-\), \(\rightarrow\) recíprocos grandes.</p></li>
+<li><p>Valores extremos grandes, \(+\) o \(-\), \(\rightarrow\) recíprocos pequeños.</p></li>
+<li><p>Valores extremos pequeños, \(+\) o \(-\), \(\rightarrow\) recíprocos grandes.</p></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Cómputo</h2></hgroup><article  id="tema.-2.5-media-armónica-cómputo">
@@ -5231,35 +5231,74 @@ Frecuencia.1
 <li>Media Geométrica:</li>
 </ul>
 
-<p>\[ \overline{x}_g = (10.5 \cdot 10 \cdot 10.5 \cdot 10  \cdot  \\
-\dots.5 \cdot 100 \cdot .5 \cdot 100)^{\frac{1}{550}}  \]</p>
+<p>\[ \overline{x}_g = (10.5^{10} \cdot 20.5^{20}  \cdot  \\
+\dots 12.5^{90} \cdot 0.5^{100})^{\frac{1}{550}}  \]</p>
+
+<p><em>En una calculadora convencional solo se puede calcular hasta \(x^{99}\)</em></p>
 
 </article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Tarea (5/2)</h2></hgroup><article  id="tema.-2.5-media-armónica-tarea-52-1">
 
 <ul>
-<li><p>Media Armónica: \[\overline{x}_h= \frac{550}{10 \cdot \frac{1}{10.5} + 20 \cdot \frac{1}{20.5} + \ldots + 100 \frac{1}{.5}}\]</p></li>
-<li><p>Resultados:</p></li>
+<li>Media Geométrica</li>
 </ul>
 
-<pre >## [1] &quot;Media aritmética: 11.84&quot;</pre>
+<p>\[ \overline{x}_g = \exp(\frac{1}{550} \cdot(10\cdot\ln(10.5)+ 20\cdot\ln(20.5) + \\
+\dots + 90\cdot\ln(12.5)+ 100\cdot\ln(0.5))) \]</p>
 
-<pre >## [1] &quot;Media geométrica: 1.12&quot;</pre>
+<ul>
+<li>Media Armónica: \[\overline{x}_h= \frac{550}{10 \cdot \frac{1}{10.5} + 20 \cdot \frac{1}{20.5} + \ldots + 100 \frac{1}{.5}}\]</li>
+</ul>
 
-<pre >## [1] &quot;Media armónica: 2.32&quot;</pre>
-
-<pre >## [1] 0.2</pre>
+<p><em>Regla de los logaritmos: \(\ln(x^{99})=99 \cdot \ln(x)\)</em></p>
 
 </article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Tarea (5/3)</h2></hgroup><article  id="tema.-2.5-media-armónica-tarea-53">
 
-<p>¿Quien representó mejor a la muestra?</p>
+<p>Resultados:</p>
+
+<ul>
+<li>Media Aritmética:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>(105 + 410 + 675 + 588 + 1125 + 330 + 903 + 1200 + 1125 + 50)/550</pre>
+
+<pre >## [1] 11.83818</pre>
+
+<ul>
+<li>Media Geométrica:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>exp(1/550*(10*log(10.5) + 20*log(20.5) + 30*log(22.5)
+    + 40*log(14.7) + 50*log(22.4) + 60*log(5.5)
+    + 70*log(12.9) + 80*log(15) + 90*log(12.4)
+    + 100*log(0.5)))</pre>
+
+<pre >## [1] 7.328946</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Tarea (5/4)</h2></hgroup><article  id="tema.-2.5-media-armónica-tarea-54">
+
+<p>Resultados:</p>
+
+<ul>
+<li>Media Armónica:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>550/(10/10.5+20/20.5+30/22.5+40/14.7
+     + 50/22.5+60/5.5+70/12.9
+     + 80/15 + 90/12.5 + 100/0.5)</pre>
+
+<pre >## [1] 2.319956</pre>
+
+</article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Tarea (5/5)</h2></hgroup><article  id="tema.-2.5-media-armónica-tarea-55">
+
+<p>¿Quién representó mejor a la muestra?</p>
 
 <ul>
 <li><p>La media aritmética es sensible a valores extremos.</p></li>
-<li><p>La media geométrica atenua valores extremos grandes.</p></li>
+<li><p>La media geométrica atenúa valores extremos grandes.</p></li>
 <li><p>La media armónica representa mejor valores extremos pequeños.</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Tarea (5/4)</h2></hgroup><article  id="tema.-2.5-media-armónica-tarea-54">
+</article></slide><slide class=""><hgroup><h2>Tema. 2.5 Media Armónica Tarea (5/4)</h2></hgroup><article  id="tema.-2.5-media-armónica-tarea-54-1">
 
 <ul>
 <li>En presencia de valores extremos grandes y pequeños:</li>

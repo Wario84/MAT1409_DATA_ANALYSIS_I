@@ -1,0 +1,32 @@
+---
+
+layout: post
+title: "Lecture 4: Medidas de Tendencia Central."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-01-30"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 2: Medidas de Tendencia Central (MTC).**
+
+2.5 Media Armónica
+
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/4_MAT1409_04.html)
+
+
+<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/4_MAT1409_04.html" download>
+  Bajar Presentación
+</a>
+
+

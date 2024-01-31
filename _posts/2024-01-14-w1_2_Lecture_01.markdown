@@ -24,7 +24,7 @@ Al finalizar este curso, serás capaz de calcular con destreza tasas de interés
 **PRIMER PARCIAL [1-3]** 
 
 1. **Introducción a la estadística y análisis de datos**
-   - 1.1 Ciencia de datos, Objetivo y ramas de la estadística, Población y muestra, Tipos de variables y escalas de medición (1 sesión)
+   - 1.1 Tipos de variables y escalas de medición (1 sesión)
 
 2. **Estadística descriptiva**
    - 2.1 Moda, mediana y media armónica (1 sesión)
