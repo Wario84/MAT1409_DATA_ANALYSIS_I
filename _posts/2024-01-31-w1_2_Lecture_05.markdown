@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 5: Medidas de Tendencia Central."
+title: "Lecture 5: Mediana y Moda."
 author: "Mario H. Gonzalez-Sauri"
 date: "2024-01-31"
 mermaid: true
