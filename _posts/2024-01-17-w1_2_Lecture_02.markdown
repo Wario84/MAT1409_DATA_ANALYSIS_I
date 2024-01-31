@@ -18,22 +18,26 @@ mermaid: true
  Tema 1.1 Tipos de Variables.
 
  1.1.1 Variables Numéricas Discretas.
+
  1.1.2 Variables Numéricas Continuas.
+
  1.2.3 Variables Categóricas.
 
  Tema 1.2 Escalas de Medición.
 
  1.2.1 Logaritmo.
+
  1.2.2 Normalización Z.
+
  1.2.3 Raíz cuadrada estandarizada.
 
 
 # Presentación
 
 
-[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/4_MAT1409_02.html)
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_02.html)
 
 
-<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/4_MAT1409_02.html" download>
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_02.html" download>
   Bajar Presentación
 </a>

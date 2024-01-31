@@ -66,10 +66,10 @@ Al finalizar este curso, serás capaz de calcular con destreza tasas de interés
 # Presentación
 
 
-[Ver la presentación](https://raw.githack.com/Wario84/FIN1403_MAT_FINANCE/master/_posts/lectures/4_MAT1409_01.html)
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_01.html)
 
 
-<a href="https://github.com/Wario84/FIN1403_MAT_FINANCE/blob/master/_posts/lectures/4_MAT1409_01.html" download>
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_01.html" download>
   Bajar Presentación
 </a>
 

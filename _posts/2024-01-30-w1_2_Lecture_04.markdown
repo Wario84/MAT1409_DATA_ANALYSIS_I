@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 4: Medidas de Tendencia Central."
+title: "Lecture 4: Media Armónica."
 author: "Mario H. Gonzalez-Sauri"
 date: "2024-01-30"
 mermaid: true
