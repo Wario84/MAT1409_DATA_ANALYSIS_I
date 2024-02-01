@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 4 Media Aritmética y Media Geométrica."
+title: "Lecture 3: Media Aritmética y Media Geométrica."
 author: "Mario H. Gonzalez-Sauri"
 date: "2024-01-30"
 mermaid: true
