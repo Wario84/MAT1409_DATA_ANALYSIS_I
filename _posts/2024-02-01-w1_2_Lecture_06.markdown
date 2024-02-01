@@ -1,0 +1,50 @@
+---
+
+layout: post
+title: "Lecture 6: Medidas de Disperción."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-02-01"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 2.7 Medidas de Dispersión.**
+
+
+2.7.1 Objetivos de las Medidas de Dispersión.
+
+2.7.2 Usos de las Medidas de Dispersión.
+
+2.7.3 Características de las Medidas de Dispersión.
+
+2.7.4 Clasificación de las Medidas de Dispersión.
+
+2.7.5 Varianza
+
+2.7.6 Desviación Estándar
+
+2.7.7 Coeficiente de Variación.
+
+2.7.8 Limitaciones de la Varianza, Desviación Estándar y Coeficiente de Variación.
+
+2.7.9 Rango Intercuartil (IQR)
+
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_06.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_06.html" download>
+  Bajar Presentación
+</a>
+
+
+
