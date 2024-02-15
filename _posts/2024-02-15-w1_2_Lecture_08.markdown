@@ -1,0 +1,37 @@
+---
+
+layout: post
+title: "Lecture 8: Gráficas: Serie de Tiempo, Dispersión, Caja."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-02-15"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 3 Representación Gráfica y Tabular.**
+
+
+3.2 Gráfica de Serie de Tiempo.
+
+3.3 Gráfica de Dispersión
+
+3.4 Gráfica de Caja
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_08.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_08.html" download>
+  Bajar Presentación
+</a>
+
+
+

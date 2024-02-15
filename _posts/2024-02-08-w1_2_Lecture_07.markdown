@@ -1,0 +1,31 @@
+---
+
+layout: post
+title: "Lecture 7: Gráficas: Histograma."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-02-08"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 3.1 Histograma.**
+
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_07.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_07.html" download>
+  Bajar Presentación
+</a>
+
+
+
