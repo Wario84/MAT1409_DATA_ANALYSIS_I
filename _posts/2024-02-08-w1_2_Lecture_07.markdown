@@ -12,8 +12,9 @@ mermaid: true
 
 # Temas
 
+**Tema 3 Representación Gráfica y Tabular.**
 
-**Tema 3.1 Histograma.**
+3.1 Histograma
 
 
 
