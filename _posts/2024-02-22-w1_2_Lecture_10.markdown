@@ -1,0 +1,33 @@
+---
+
+layout: post
+title: "Lecture 10: Gráficas en Excel."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-02-15"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 3 Representación Gráfica y Tabular.**
+
+
+3.7 Gráficsa en Excel.
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_10.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_10.html" download>
+  Bajar Presentación
+</a>
+
+
+

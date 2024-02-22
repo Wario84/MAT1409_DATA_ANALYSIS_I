@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\resources",
     "\\_includes",
     "\\_posts",
     "\\_posts\\lectures"
   ],
-  "SelectedNode": "\\_posts\\2024-02-08-w1_2_Lecture_07.markdown",
+  "SelectedNode": "\\assets\\resources",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,35 @@
+---
+
+layout: post
+title: "Lecture 9: Gráficas: Pastel y Ojiva."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-02-19"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 3 Representación Gráfica y Tabular.**
+
+
+3.5 Gráfica de Pastel.
+
+3.6 Ojiva.
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_09.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_09.html" download>
+  Bajar Presentación
+</a>
+
+
+
