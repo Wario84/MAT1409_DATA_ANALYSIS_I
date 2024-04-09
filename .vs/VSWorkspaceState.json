@@ -3,13 +3,13 @@
     "",
     "\\.github",
     "\\assets",
+    "\\assets\\resources",
     "\\_archives",
     "\\_includes",
     "\\_layouts",
     "\\_posts",
-    "\\_posts\\lectures",
     "\\_sass"
   ],
-  "SelectedNode": "\\_posts\\2024-03-19-w1_2_Lecture_11.markdown",
+  "SelectedNode": "\\assets\\resources",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>11 Introducción a la Probabilidad</title>
+  <title>12 Probabilidad Condicional y Marginal.</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -9,7 +9,7 @@
 
 
 
-  <meta name="date" content="2024-03-18" />
+  <meta name="date" content="2024-04-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,7 +20,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: '11 Introducción a la Probabilidad',
+                title: '12 Probabilidad Condicional y Marginal.',
                         subtitle: 'Análisis de datos I (MAT1409)',
                 useBuilds: true,
         usePrettify: true,
@@ -3085,1035 +3085,6 @@ if (document.readyState !== "loading" &&
 
 
 </script>
-  <script>$(document).ready(function(){
-    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
-        $('[data-toggle="tooltip"]').tooltip();
-    }
-    if ($('[data-toggle="popover"]').popover === 'function') {
-        $('[data-toggle="popover"]').popover();
-    }
-});
-</script>
-  <style type="text/css">
-.lightable-minimal {
-border-collapse: separate;
-border-spacing: 16px 1px;
-width: 100%;
-margin-bottom: 10px;
-}
-.lightable-minimal td {
-margin-left: 5px;
-margin-right: 5px;
-}
-.lightable-minimal th {
-margin-left: 5px;
-margin-right: 5px;
-}
-.lightable-minimal thead tr:last-child th {
-border-bottom: 2px solid #00000050;
-empty-cells: hide;
-}
-.lightable-minimal tbody tr:first-child td {
-padding-top: 0.5em;
-}
-.lightable-minimal.lightable-hover tbody tr:hover {
-background-color: #f5f5f5;
-}
-.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-classic {
-border-top: 0.16em solid #111111;
-border-bottom: 0.16em solid #111111;
-width: 100%;
-margin-bottom: 10px;
-margin: 10px 5px;
-}
-.lightable-classic tfoot tr td {
-border: 0;
-}
-.lightable-classic tfoot tr:first-child td {
-border-top: 0.14em solid #111111;
-}
-.lightable-classic caption {
-color: #222222;
-}
-.lightable-classic td {
-padding-left: 5px;
-padding-right: 5px;
-color: #222222;
-}
-.lightable-classic th {
-padding-left: 5px;
-padding-right: 5px;
-font-weight: normal;
-color: #222222;
-}
-.lightable-classic thead tr:last-child th {
-border-bottom: 0.10em solid #111111;
-}
-.lightable-classic.lightable-hover tbody tr:hover {
-background-color: #F9EEC1;
-}
-.lightable-classic.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-classic-2 {
-border-top: 3px double #111111;
-border-bottom: 3px double #111111;
-width: 100%;
-margin-bottom: 10px;
-}
-.lightable-classic-2 tfoot tr td {
-border: 0;
-}
-.lightable-classic-2 tfoot tr:first-child td {
-border-top: 3px double #111111;
-}
-.lightable-classic-2 caption {
-color: #222222;
-}
-.lightable-classic-2 td {
-padding-left: 5px;
-padding-right: 5px;
-color: #222222;
-}
-.lightable-classic-2 th {
-padding-left: 5px;
-padding-right: 5px;
-font-weight: normal;
-color: #222222;
-}
-.lightable-classic-2 tbody tr:last-child td {
-border-bottom: 3px double #111111;
-}
-.lightable-classic-2 thead tr:last-child th {
-border-bottom: 1px solid #111111;
-}
-.lightable-classic-2.lightable-hover tbody tr:hover {
-background-color: #F9EEC1;
-}
-.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-material {
-min-width: 100%;
-white-space: nowrap;
-table-layout: fixed;
-font-family: Roboto, sans-serif;
-border: 1px solid #EEE;
-border-collapse: collapse;
-margin-bottom: 10px;
-}
-.lightable-material tfoot tr td {
-border: 0;
-}
-.lightable-material tfoot tr:first-child td {
-border-top: 1px solid #EEE;
-}
-.lightable-material th {
-height: 56px;
-padding-left: 16px;
-padding-right: 16px;
-}
-.lightable-material td {
-height: 52px;
-padding-left: 16px;
-padding-right: 16px;
-border-top: 1px solid #eeeeee;
-}
-.lightable-material.lightable-hover tbody tr:hover {
-background-color: #f5f5f5;
-}
-.lightable-material.lightable-striped tbody tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-.lightable-material.lightable-striped tbody td {
-border: 0;
-}
-.lightable-material.lightable-striped thead tr:last-child th {
-border-bottom: 1px solid #ddd;
-}
-.lightable-material-dark {
-min-width: 100%;
-white-space: nowrap;
-table-layout: fixed;
-font-family: Roboto, sans-serif;
-border: 1px solid #FFFFFF12;
-border-collapse: collapse;
-margin-bottom: 10px;
-background-color: #363640;
-}
-.lightable-material-dark tfoot tr td {
-border: 0;
-}
-.lightable-material-dark tfoot tr:first-child td {
-border-top: 1px solid #FFFFFF12;
-}
-.lightable-material-dark th {
-height: 56px;
-padding-left: 16px;
-padding-right: 16px;
-color: #FFFFFF60;
-}
-.lightable-material-dark td {
-height: 52px;
-padding-left: 16px;
-padding-right: 16px;
-color: #FFFFFF;
-border-top: 1px solid #FFFFFF12;
-}
-.lightable-material-dark.lightable-hover tbody tr:hover {
-background-color: #FFFFFF12;
-}
-.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
-background-color: #FFFFFF12;
-}
-.lightable-material-dark.lightable-striped tbody td {
-border: 0;
-}
-.lightable-material-dark.lightable-striped thead tr:last-child th {
-border-bottom: 1px solid #FFFFFF12;
-}
-.lightable-paper {
-width: 100%;
-margin-bottom: 10px;
-color: #444;
-}
-.lightable-paper tfoot tr td {
-border: 0;
-}
-.lightable-paper tfoot tr:first-child td {
-border-top: 1px solid #00000020;
-}
-.lightable-paper thead tr:last-child th {
-color: #666;
-vertical-align: bottom;
-border-bottom: 1px solid #00000020;
-line-height: 1.15em;
-padding: 10px 5px;
-}
-.lightable-paper td {
-vertical-align: middle;
-border-bottom: 1px solid #00000010;
-line-height: 1.15em;
-padding: 7px 5px;
-}
-.lightable-paper.lightable-hover tbody tr:hover {
-background-color: #F9EEC1;
-}
-.lightable-paper.lightable-striped tbody tr:nth-child(even) {
-background-color: #00000008;
-}
-.lightable-paper.lightable-striped tbody td {
-border: 0;
-}
-</style>
-  <style type="text/css">
-table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}table{background-color:transparent}caption{padding-top:8px;padding-bottom:8px;color:#777;text-align:left}th{text-align:left}.table{width:100%;max-width:100%;margin-bottom:20px}.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd}.table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>th,.table>caption+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>td,.table>thead:first-child>tr:first-child>td{border-top:0}.table>tbody+tbody{border-top:2px solid #ddd}.table .table{background-color:#fff}.table-condensed>thead>tr>th,.table-condensed>tbody>tr>th,.table-condensed>tfoot>tr>th,.table-condensed>thead>tr>td,.table-condensed>tbody>tr>td,.table-condensed>tfoot>tr>td{padding:5px}.table-bordered{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>thead>tr>td{border-bottom-width:2px}.table-striped>tbody>tr:nth-of-type(odd){background-color:#f9f9f9}.table-hover>tbody>tr:hover{background-color:#f5f5f5}table col[class*="col-"]{position:static;float:none;display:table-column}table td[class*="col-"],table th[class*="col-"]{position:static;float:none;display:table-cell}.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th{background-color:#f5f5f5}.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover,.table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr:hover>.active,.table-hover>tbody>tr.active:hover>th{background-color:#e8e8e8}.table>thead>tr>td.success,.table>tbody>tr>td.success,.table>tfoot>tr>td.success,.table>thead>tr>th.success,.table>tbody>tr>th.success,.table>tfoot>tr>th.success,.table>thead>tr.success>td,.table>tbody>tr.success>td,.table>tfoot>tr.success>td,.table>thead>tr.success>th,.table>tbody>tr.success>th,.table>tfoot>tr.success>th{background-color:#dff0d8}.table-hover>tbody>tr>td.success:hover,.table-hover>tbody>tr>th.success:hover,.table-hover>tbody>tr.success:hover>td,.table-hover>tbody>tr:hover>.success,.table-hover>tbody>tr.success:hover>th{background-color:#d0e9c6}.table>thead>tr>td.info,.table>tbody>tr>td.info,.table>tfoot>tr>td.info,.table>thead>tr>th.info,.table>tbody>tr>th.info,.table>tfoot>tr>th.info,.table>thead>tr.info>td,.table>tbody>tr.info>td,.table>tfoot>tr.info>td,.table>thead>tr.info>th,.table>tbody>tr.info>th,.table>tfoot>tr.info>th{background-color:#d9edf7}.table-hover>tbody>tr>td.info:hover,.table-hover>tbody>tr>th.info:hover,.table-hover>tbody>tr.info:hover>td,.table-hover>tbody>tr:hover>.info,.table-hover>tbody>tr.info:hover>th{background-color:#c4e3f3}.table>thead>tr>td.warning,.table>tbody>tr>td.warning,.table>tfoot>tr>td.warning,.table>thead>tr>th.warning,.table>tbody>tr>th.warning,.table>tfoot>tr>th.warning,.table>thead>tr.warning>td,.table>tbody>tr.warning>td,.table>tfoot>tr.warning>td,.table>thead>tr.warning>th,.table>tbody>tr.warning>th,.table>tfoot>tr.warning>th{background-color:#fcf8e3}.table-hover>tbody>tr>td.warning:hover,.table-hover>tbody>tr>th.warning:hover,.table-hover>tbody>tr.warning:hover>td,.table-hover>tbody>tr:hover>.warning,.table-hover>tbody>tr.warning:hover>th{background-color:#faf2cc}.table>thead>tr>td.danger,.table>tbody>tr>td.danger,.table>tfoot>tr>td.danger,.table>thead>tr>th.danger,.table>tbody>tr>th.danger,.table>tfoot>tr>th.danger,.table>thead>tr.danger>td,.table>tbody>tr.danger>td,.table>tfoot>tr.danger>td,.table>thead>tr.danger>th,.table>tbody>tr.danger>th,.table>tfoot>tr.danger>th{background-color:#f2dede}.table-hover>tbody>tr>td.danger:hover,.table-hover>tbody>tr>th.danger:hover,.table-hover>tbody>tr.danger:hover>td,.table-hover>tbody>tr:hover>.danger,.table-hover>tbody>tr.danger:hover>th{background-color:#ebcccc}.table-responsive{overflow-x:auto;min-height:0.01%}@media screen and (max-width:767px){.table-responsive{width:100%;margin-bottom:15px;overflow-y:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;border:1px solid #ddd}.table-responsive>.table{margin-bottom:0}.table-responsive>.table>thead>tr>th,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>td{white-space:nowrap}.table-responsive>.table-bordered{border:0}.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>td{border-bottom:0}}.tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:normal;letter-spacing:normal;line-break:auto;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;font-size:12px;opacity:0;filter:alpha(opacity=0)}.tooltip.in{opacity:.9;filter:alpha(opacity=90)}.tooltip.top{margin-top:-3px;padding:5px 0}.tooltip.right{margin-left:3px;padding:0 5px}.tooltip.bottom{margin-top:3px;padding:5px 0}.tooltip.left{margin-left:-3px;padding:0 5px}.tooltip-inner{max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:4px}.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.top-left .tooltip-arrow{bottom:0;right:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.top-right .tooltip-arrow{bottom:0;left:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#000}.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#000}.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip.bottom-left .tooltip-arrow{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:normal;letter-spacing:normal;line-break:auto;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;white-space:normal;word-break:normal;word-spacing:normal;word-wrap:normal;font-size:14px;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);box-shadow:0 5px 10px rgba(0,0,0,0.2)}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{margin:0;padding:8px 14px;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{border-width:10px;content:""}.popover.top>.arrow{left:50%;margin-left:-11px;border-bottom-width:0;border-top-color:#999;border-top-color:rgba(0,0,0,0.25);bottom:-11px}.popover.top>.arrow:after{content:" ";bottom:1px;margin-left:-10px;border-bottom-width:0;border-top-color:#fff}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-left-width:0;border-right-color:#999;border-right-color:rgba(0,0,0,0.25)}.popover.right>.arrow:after{content:" ";left:1px;bottom:-10px;border-left-width:0;border-right-color:#fff}.popover.bottom>.arrow{left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,0.25);top:-11px}.popover.bottom>.arrow:after{content:" ";top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,0.25)}.popover.left>.arrow:after{content:" ";right:1px;border-right-width:0;border-left-color:#fff;bottom:-10px}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}
-</style>
-  <script>/* ========================================================================
- * Bootstrap: tooltip.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#tooltip
- * Inspired by the original jQuery.tipsy by Jason Frame
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-+function ($) {
-  'use strict';
-
-  var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn']
-
-  var uriAttrs = [
-    'background',
-    'cite',
-    'href',
-    'itemtype',
-    'longdesc',
-    'poster',
-    'src',
-    'xlink:href'
-  ]
-
-  var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
-
-  var DefaultWhitelist = {
-    // Global attributes allowed on any supplied element below.
-    '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
-    a: ['target', 'href', 'title', 'rel'],
-    area: [],
-    b: [],
-    br: [],
-    col: [],
-    code: [],
-    div: [],
-    em: [],
-    hr: [],
-    h1: [],
-    h2: [],
-    h3: [],
-    h4: [],
-    h5: [],
-    h6: [],
-    i: [],
-    img: ['src', 'alt', 'title', 'width', 'height'],
-    li: [],
-    ol: [],
-    p: [],
-    pre: [],
-    s: [],
-    small: [],
-    span: [],
-    sub: [],
-    sup: [],
-    strong: [],
-    u: [],
-    ul: []
-  }
-
-  /**
-   * A pattern that recognizes a commonly useful subset of URLs that are safe.
-   *
-   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
-   */
-  var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi
-
-  /**
-   * A pattern that matches safe data URLs. Only matches image, video and audio types.
-   *
-   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
-   */
-  var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i
-
-  function allowedAttribute(attr, allowedAttributeList) {
-    var attrName = attr.nodeName.toLowerCase()
-
-    if ($.inArray(attrName, allowedAttributeList) !== -1) {
-      if ($.inArray(attrName, uriAttrs) !== -1) {
-        return Boolean(attr.nodeValue.match(SAFE_URL_PATTERN) || attr.nodeValue.match(DATA_URL_PATTERN))
-      }
-
-      return true
-    }
-
-    var regExp = $(allowedAttributeList).filter(function (index, value) {
-      return value instanceof RegExp
-    })
-
-    // Check if a regular expression validates the attribute.
-    for (var i = 0, l = regExp.length; i < l; i++) {
-      if (attrName.match(regExp[i])) {
-        return true
-      }
-    }
-
-    return false
-  }
-
-  function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
-    if (unsafeHtml.length === 0) {
-      return unsafeHtml
-    }
-
-    if (sanitizeFn && typeof sanitizeFn === 'function') {
-      return sanitizeFn(unsafeHtml)
-    }
-
-    // IE 8 and below don't support createHTMLDocument
-    if (!document.implementation || !document.implementation.createHTMLDocument) {
-      return unsafeHtml
-    }
-
-    var createdDocument = document.implementation.createHTMLDocument('sanitization')
-    createdDocument.body.innerHTML = unsafeHtml
-
-    var whitelistKeys = $.map(whiteList, function (el, i) { return i })
-    var elements = $(createdDocument.body).find('*')
-
-    for (var i = 0, len = elements.length; i < len; i++) {
-      var el = elements[i]
-      var elName = el.nodeName.toLowerCase()
-
-      if ($.inArray(elName, whitelistKeys) === -1) {
-        el.parentNode.removeChild(el)
-
-        continue
-      }
-
-      var attributeList = $.map(el.attributes, function (el) { return el })
-      var whitelistedAttributes = [].concat(whiteList['*'] || [], whiteList[elName] || [])
-
-      for (var j = 0, len2 = attributeList.length; j < len2; j++) {
-        if (!allowedAttribute(attributeList[j], whitelistedAttributes)) {
-          el.removeAttribute(attributeList[j].nodeName)
-        }
-      }
-    }
-
-    return createdDocument.body.innerHTML
-  }
-
-  // TOOLTIP PUBLIC CLASS DEFINITION
-  // ===============================
-
-  var Tooltip = function (element, options) {
-    this.type       = null
-    this.options    = null
-    this.enabled    = null
-    this.timeout    = null
-    this.hoverState = null
-    this.$element   = null
-    this.inState    = null
-
-    this.init('tooltip', element, options)
-  }
-
-  Tooltip.VERSION  = '3.4.1'
-
-  Tooltip.TRANSITION_DURATION = 150
-
-  Tooltip.DEFAULTS = {
-    animation: true,
-    placement: 'top',
-    selector: false,
-    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
-    trigger: 'hover focus',
-    title: '',
-    delay: 0,
-    html: false,
-    container: false,
-    viewport: {
-      selector: 'body',
-      padding: 0
-    },
-    sanitize : true,
-    sanitizeFn : null,
-    whiteList : DefaultWhitelist
-  }
-
-  Tooltip.prototype.init = function (type, element, options) {
-    this.enabled   = true
-    this.type      = type
-    this.$element  = $(element)
-    this.options   = this.getOptions(options)
-    this.$viewport = this.options.viewport && $(document).find($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : (this.options.viewport.selector || this.options.viewport))
-    this.inState   = { click: false, hover: false, focus: false }
-
-    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!')
-    }
-
-    var triggers = this.options.trigger.split(' ')
-
-    for (var i = triggers.length; i--;) {
-      var trigger = triggers[i]
-
-      if (trigger == 'click') {
-        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this))
-      } else if (trigger != 'manual') {
-        var eventIn  = trigger == 'hover' ? 'mouseenter' : 'focusin'
-        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout'
-
-        this.$element.on(eventIn  + '.' + this.type, this.options.selector, $.proxy(this.enter, this))
-        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this))
-      }
-    }
-
-    this.options.selector ?
-      (this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' })) :
-      this.fixTitle()
-  }
-
-  Tooltip.prototype.getDefaults = function () {
-    return Tooltip.DEFAULTS
-  }
-
-  Tooltip.prototype.getOptions = function (options) {
-    var dataAttributes = this.$element.data()
-
-    for (var dataAttr in dataAttributes) {
-      if (dataAttributes.hasOwnProperty(dataAttr) && $.inArray(dataAttr, DISALLOWED_ATTRIBUTES) !== -1) {
-        delete dataAttributes[dataAttr]
-      }
-    }
-
-    options = $.extend({}, this.getDefaults(), dataAttributes, options)
-
-    if (options.delay && typeof options.delay == 'number') {
-      options.delay = {
-        show: options.delay,
-        hide: options.delay
-      }
-    }
-
-    if (options.sanitize) {
-      options.template = sanitizeHtml(options.template, options.whiteList, options.sanitizeFn)
-    }
-
-    return options
-  }
-
-  Tooltip.prototype.getDelegateOptions = function () {
-    var options  = {}
-    var defaults = this.getDefaults()
-
-    this._options && $.each(this._options, function (key, value) {
-      if (defaults[key] != value) options[key] = value
-    })
-
-    return options
-  }
-
-  Tooltip.prototype.enter = function (obj) {
-    var self = obj instanceof this.constructor ?
-      obj : $(obj.currentTarget).data('bs.' + this.type)
-
-    if (!self) {
-      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
-      $(obj.currentTarget).data('bs.' + this.type, self)
-    }
-
-    if (obj instanceof $.Event) {
-      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true
-    }
-
-    if (self.tip().hasClass('in') || self.hoverState == 'in') {
-      self.hoverState = 'in'
-      return
-    }
-
-    clearTimeout(self.timeout)
-
-    self.hoverState = 'in'
-
-    if (!self.options.delay || !self.options.delay.show) return self.show()
-
-    self.timeout = setTimeout(function () {
-      if (self.hoverState == 'in') self.show()
-    }, self.options.delay.show)
-  }
-
-  Tooltip.prototype.isInStateTrue = function () {
-    for (var key in this.inState) {
-      if (this.inState[key]) return true
-    }
-
-    return false
-  }
-
-  Tooltip.prototype.leave = function (obj) {
-    var self = obj instanceof this.constructor ?
-      obj : $(obj.currentTarget).data('bs.' + this.type)
-
-    if (!self) {
-      self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
-      $(obj.currentTarget).data('bs.' + this.type, self)
-    }
-
-    if (obj instanceof $.Event) {
-      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false
-    }
-
-    if (self.isInStateTrue()) return
-
-    clearTimeout(self.timeout)
-
-    self.hoverState = 'out'
-
-    if (!self.options.delay || !self.options.delay.hide) return self.hide()
-
-    self.timeout = setTimeout(function () {
-      if (self.hoverState == 'out') self.hide()
-    }, self.options.delay.hide)
-  }
-
-  Tooltip.prototype.show = function () {
-    var e = $.Event('show.bs.' + this.type)
-
-    if (this.hasContent() && this.enabled) {
-      this.$element.trigger(e)
-
-      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0])
-      if (e.isDefaultPrevented() || !inDom) return
-      var that = this
-
-      var $tip = this.tip()
-
-      var tipId = this.getUID(this.type)
-
-      this.setContent()
-      $tip.attr('id', tipId)
-      this.$element.attr('aria-describedby', tipId)
-
-      if (this.options.animation) $tip.addClass('fade')
-
-      var placement = typeof this.options.placement == 'function' ?
-        this.options.placement.call(this, $tip[0], this.$element[0]) :
-        this.options.placement
-
-      var autoToken = /\s?auto?\s?/i
-      var autoPlace = autoToken.test(placement)
-      if (autoPlace) placement = placement.replace(autoToken, '') || 'top'
-
-      $tip
-        .detach()
-        .css({ top: 0, left: 0, display: 'block' })
-        .addClass(placement)
-        .data('bs.' + this.type, this)
-
-      this.options.container ? $tip.appendTo($(document).find(this.options.container)) : $tip.insertAfter(this.$element)
-      this.$element.trigger('inserted.bs.' + this.type)
-
-      var pos          = this.getPosition()
-      var actualWidth  = $tip[0].offsetWidth
-      var actualHeight = $tip[0].offsetHeight
-
-      if (autoPlace) {
-        var orgPlacement = placement
-        var viewportDim = this.getPosition(this.$viewport)
-
-        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top'    :
-                    placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
-                    placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
-                    placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
-                    placement
-
-        $tip
-          .removeClass(orgPlacement)
-          .addClass(placement)
-      }
-
-      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
-
-      this.applyPlacement(calculatedOffset, placement)
-
-      var complete = function () {
-        var prevHoverState = that.hoverState
-        that.$element.trigger('shown.bs.' + that.type)
-        that.hoverState = null
-
-        if (prevHoverState == 'out') that.leave(that)
-      }
-
-      $.support.transition && this.$tip.hasClass('fade') ?
-        $tip
-          .one('bsTransitionEnd', complete)
-          .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-        complete()
-    }
-  }
-
-  Tooltip.prototype.applyPlacement = function (offset, placement) {
-    var $tip   = this.tip()
-    var width  = $tip[0].offsetWidth
-    var height = $tip[0].offsetHeight
-
-    // manually read margins because getBoundingClientRect includes difference
-    var marginTop = parseInt($tip.css('margin-top'), 10)
-    var marginLeft = parseInt($tip.css('margin-left'), 10)
-
-    // we must check for NaN for ie 8/9
-    if (isNaN(marginTop))  marginTop  = 0
-    if (isNaN(marginLeft)) marginLeft = 0
-
-    offset.top  += marginTop
-    offset.left += marginLeft
-
-    // $.fn.offset doesn't round pixel values
-    // so we use setOffset directly with our own function B-0
-    $.offset.setOffset($tip[0], $.extend({
-      using: function (props) {
-        $tip.css({
-          top: Math.round(props.top),
-          left: Math.round(props.left)
-        })
-      }
-    }, offset), 0)
-
-    $tip.addClass('in')
-
-    // check to see if placing tip in new offset caused the tip to resize itself
-    var actualWidth  = $tip[0].offsetWidth
-    var actualHeight = $tip[0].offsetHeight
-
-    if (placement == 'top' && actualHeight != height) {
-      offset.top = offset.top + height - actualHeight
-    }
-
-    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight)
-
-    if (delta.left) offset.left += delta.left
-    else offset.top += delta.top
-
-    var isVertical          = /top|bottom/.test(placement)
-    var arrowDelta          = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight
-    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight'
-
-    $tip.offset(offset)
-    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical)
-  }
-
-  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
-    this.arrow()
-      .css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
-      .css(isVertical ? 'top' : 'left', '')
-  }
-
-  Tooltip.prototype.setContent = function () {
-    var $tip  = this.tip()
-    var title = this.getTitle()
-
-    if (this.options.html) {
-      if (this.options.sanitize) {
-        title = sanitizeHtml(title, this.options.whiteList, this.options.sanitizeFn)
-      }
-
-      $tip.find('.tooltip-inner').html(title)
-    } else {
-      $tip.find('.tooltip-inner').text(title)
-    }
-
-    $tip.removeClass('fade in top bottom left right')
-  }
-
-  Tooltip.prototype.hide = function (callback) {
-    var that = this
-    var $tip = $(this.$tip)
-    var e    = $.Event('hide.bs.' + this.type)
-
-    function complete() {
-      if (that.hoverState != 'in') $tip.detach()
-      if (that.$element) { // TODO: Check whether guarding this code with this `if` is really necessary.
-        that.$element
-          .removeAttr('aria-describedby')
-          .trigger('hidden.bs.' + that.type)
-      }
-      callback && callback()
-    }
-
-    this.$element.trigger(e)
-
-    if (e.isDefaultPrevented()) return
-
-    $tip.removeClass('in')
-
-    $.support.transition && $tip.hasClass('fade') ?
-      $tip
-        .one('bsTransitionEnd', complete)
-        .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
-      complete()
-
-    this.hoverState = null
-
-    return this
-  }
-
-  Tooltip.prototype.fixTitle = function () {
-    var $e = this.$element
-    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
-      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
-    }
-  }
-
-  Tooltip.prototype.hasContent = function () {
-    return this.getTitle()
-  }
-
-  Tooltip.prototype.getPosition = function ($element) {
-    $element   = $element || this.$element
-
-    var el     = $element[0]
-    var isBody = el.tagName == 'BODY'
-
-    var elRect    = el.getBoundingClientRect()
-    if (elRect.width == null) {
-      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
-      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
-    }
-    var isSvg = window.SVGElement && el instanceof window.SVGElement
-    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
-    // See https://github.com/twbs/bootstrap/issues/20280
-    var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
-    var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
-    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
-
-    return $.extend({}, elRect, scroll, outerDims, elOffset)
-  }
-
-  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
-    return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
-        /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
-
-  }
-
-  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
-    var delta = { top: 0, left: 0 }
-    if (!this.$viewport) return delta
-
-    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0
-    var viewportDimensions = this.getPosition(this.$viewport)
-
-    if (/right|left/.test(placement)) {
-      var topEdgeOffset    = pos.top - viewportPadding - viewportDimensions.scroll
-      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight
-      if (topEdgeOffset < viewportDimensions.top) { // top overflow
-        delta.top = viewportDimensions.top - topEdgeOffset
-      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) { // bottom overflow
-        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset
-      }
-    } else {
-      var leftEdgeOffset  = pos.left - viewportPadding
-      var rightEdgeOffset = pos.left + viewportPadding + actualWidth
-      if (leftEdgeOffset < viewportDimensions.left) { // left overflow
-        delta.left = viewportDimensions.left - leftEdgeOffset
-      } else if (rightEdgeOffset > viewportDimensions.right) { // right overflow
-        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset
-      }
-    }
-
-    return delta
-  }
-
-  Tooltip.prototype.getTitle = function () {
-    var title
-    var $e = this.$element
-    var o  = this.options
-
-    title = $e.attr('data-original-title')
-      || (typeof o.title == 'function' ? o.title.call($e[0]) :  o.title)
-
-    return title
-  }
-
-  Tooltip.prototype.getUID = function (prefix) {
-    do prefix += ~~(Math.random() * 1000000)
-    while (document.getElementById(prefix))
-    return prefix
-  }
-
-  Tooltip.prototype.tip = function () {
-    if (!this.$tip) {
-      this.$tip = $(this.options.template)
-      if (this.$tip.length != 1) {
-        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!')
-      }
-    }
-    return this.$tip
-  }
-
-  Tooltip.prototype.arrow = function () {
-    return (this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow'))
-  }
-
-  Tooltip.prototype.enable = function () {
-    this.enabled = true
-  }
-
-  Tooltip.prototype.disable = function () {
-    this.enabled = false
-  }
-
-  Tooltip.prototype.toggleEnabled = function () {
-    this.enabled = !this.enabled
-  }
-
-  Tooltip.prototype.toggle = function (e) {
-    var self = this
-    if (e) {
-      self = $(e.currentTarget).data('bs.' + this.type)
-      if (!self) {
-        self = new this.constructor(e.currentTarget, this.getDelegateOptions())
-        $(e.currentTarget).data('bs.' + this.type, self)
-      }
-    }
-
-    if (e) {
-      self.inState.click = !self.inState.click
-      if (self.isInStateTrue()) self.enter(self)
-      else self.leave(self)
-    } else {
-      self.tip().hasClass('in') ? self.leave(self) : self.enter(self)
-    }
-  }
-
-  Tooltip.prototype.destroy = function () {
-    var that = this
-    clearTimeout(this.timeout)
-    this.hide(function () {
-      that.$element.off('.' + that.type).removeData('bs.' + that.type)
-      if (that.$tip) {
-        that.$tip.detach()
-      }
-      that.$tip = null
-      that.$arrow = null
-      that.$viewport = null
-      that.$element = null
-    })
-  }
-
-  Tooltip.prototype.sanitizeHtml = function (unsafeHtml) {
-    return sanitizeHtml(unsafeHtml, this.options.whiteList, this.options.sanitizeFn)
-  }
-
-  // TOOLTIP PLUGIN DEFINITION
-  // =========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.tooltip')
-      var options = typeof option == 'object' && option
-
-      if (!data && /destroy|hide/.test(option)) return
-      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.tooltip
-
-  $.fn.tooltip             = Plugin
-  $.fn.tooltip.Constructor = Tooltip
-
-
-  // TOOLTIP NO CONFLICT
-  // ===================
-
-  $.fn.tooltip.noConflict = function () {
-    $.fn.tooltip = old
-    return this
-  }
-
-}(jQuery);
-
-/* ========================================================================
- * Bootstrap: popover.js v3.4.1
- * https://getbootstrap.com/docs/3.4/javascript/#popovers
- * ========================================================================
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
-
-
-+function ($) {
-  'use strict';
-
-  // POPOVER PUBLIC CLASS DEFINITION
-  // ===============================
-
-  var Popover = function (element, options) {
-    this.init('popover', element, options)
-  }
-
-  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
-
-  Popover.VERSION  = '3.4.1'
-
-  Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
-    placement: 'right',
-    trigger: 'click',
-    content: '',
-    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-  })
-
-
-  // NOTE: POPOVER EXTENDS tooltip.js
-  // ================================
-
-  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
-
-  Popover.prototype.constructor = Popover
-
-  Popover.prototype.getDefaults = function () {
-    return Popover.DEFAULTS
-  }
-
-  Popover.prototype.setContent = function () {
-    var $tip    = this.tip()
-    var title   = this.getTitle()
-    var content = this.getContent()
-
-    if (this.options.html) {
-      var typeContent = typeof content
-
-      if (this.options.sanitize) {
-        title = this.sanitizeHtml(title)
-
-        if (typeContent === 'string') {
-          content = this.sanitizeHtml(content)
-        }
-      }
-
-      $tip.find('.popover-title').html(title)
-      $tip.find('.popover-content').children().detach().end()[
-        typeContent === 'string' ? 'html' : 'append'
-      ](content)
-    } else {
-      $tip.find('.popover-title').text(title)
-      $tip.find('.popover-content').children().detach().end().text(content)
-    }
-
-    $tip.removeClass('fade top bottom left right in')
-
-    // IE8 doesn't accept hiding via the `:empty` pseudo selector, we have to do
-    // this manually by checking the contents.
-    if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
-  }
-
-  Popover.prototype.hasContent = function () {
-    return this.getTitle() || this.getContent()
-  }
-
-  Popover.prototype.getContent = function () {
-    var $e = this.$element
-    var o  = this.options
-
-    return $e.attr('data-content')
-      || (typeof o.content == 'function' ?
-        o.content.call($e[0]) :
-        o.content)
-  }
-
-  Popover.prototype.arrow = function () {
-    return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
-  }
-
-
-  // POPOVER PLUGIN DEFINITION
-  // =========================
-
-  function Plugin(option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.popover')
-      var options = typeof option == 'object' && option
-
-      if (!data && /destroy|hide/.test(option)) return
-      if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
-      if (typeof option == 'string') data[option]()
-    })
-  }
-
-  var old = $.fn.popover
-
-  $.fn.popover             = Plugin
-  $.fn.popover.Constructor = Popover
-
-
-  // POPOVER NO CONFLICT
-  // ===================
-
-  $.fn.popover.noConflict = function () {
-    $.fn.popover = old
-    return this
-  }
-
-}(jQuery);
-</script>
 
   <style type="text/css">
 b, strong {
@@ -4167,7 +3138,7 @@ ul.task-list{list-style: none;}
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2024-03-18</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2024-04-09</p>
           </hgroup>
   </slide>
 
@@ -4175,304 +3146,365 @@ ul.task-list{list-style: none;}
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>4 Introducción a la Probabilidad</h2></hgroup><article  id="introducción-a-la-probabilidad">
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.1 Variables Aleatorias.</h2></hgroup><article  id="tema-4.1-variables-aleatorias.">
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional</h2></hgroup><article  id="tema-4.9-probabilidad-condicional">
 
 <ul>
-<li>Variable aleatoria(\(X\)): Es una variable cuyos valores son determinados por el resultado de un proceso aleatorio (existe incertidumbre. <br> <br></li>
-<li>Variable numérica discreta: Es una variable aleatoria que tiene valores contables.</li>
-<li>Distribucion de probabilidad de masa. <br> <br></li>
-<li>Variable numérica continua: Es una variable aleatoria que tiene un valores que se miden.</li>
-<li>Distribucion de probabilidad de densidad. <br> <br></li>
-<li>Experimento: El proceso aleatorio de generar resultados de variables aleatorias. <br> <br></li>
+<li><p>La probabilidad de que ocurra un evento \(A\) data que ha ocurrido \(B\), se denota como \(P(A|B)\).</p></li>
+<li><p>La probabilidad condicional de \(A\) dado \(B\):</p>
+
+<p>\[ P(A | B) = \frac{P(A \cap B)}{P(B)} \]</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.2 Evento y Espacio de probabilidad.</h2></hgroup><article  id="tema-4.2-evento-y-espacio-de-probabilidad.">
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (1/1)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-11">
 
 <ul>
-<li><p>Espacio de probabilidad (\(S\)): El conjunto de todos los posibles resultados de una variable aleatoria. <br> <br></p></li>
-<li><p>Evento(\(E, A, B\)): Un resultado o un conjunto de resultados particulares de una variable aleatoria.</p></li>
+<li><p>Lanza un par de dados justos.</p>
+
+<p>\(B = \{ \text{la suma es 6} \} = \{(1,5), (2,4), (3,3), (4,2), (5,1)\}\)</p>
+
+<p>y \(A = \{\text{2 en al menos un dado}\} = \{(2,4), (4,2)\}\),</p></li>
+<li><p>Encuentra la probabilidad de que salga un 2 dado que la suma de los dados es 6 \(P(A | BS)\).</p></li>
 </ul>
 
-<p><br> <br></p>
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional Diagrama (1/2)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-diagrama-12">
+
+<p><img src="data:image/png;base64,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" width="768" /><img src="data:image/png;base64,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AIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACEEgCAUAIAEEoAAEIJAEAoAQAIJQAAoQQAIJQAAIQSAIBQAgAQSgAAQgkAQCgBAAglAAChBAAglAAAhBIAgFACABBKAABCCQBAKAEACCUAAKEEACCUAACE+n9GAwoSQIAuSAAAAABJRU5ErkJggg==" width="768" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (1/3)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-13">
 
 <ul>
-<li>Probabilidad \(P\), Probabilidad \(P(E_n)=p\) de un evento en particular.</li>
+<li><p>\(E\) consta de cinco elementos y dos de ellos, (2,4) y (4,2), pertenecen a \(A\):</p>
+
+<p>\(A \cap B = \{(2,4), (4,2)\}\). Entonces \(P(A | B) = 2/5\).</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.3 Axiomas de Probabilidad</h2></hgroup><article  id="tema-4.3-axiomas-de-probabilidad">
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (1/2)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-12">
+
+<p>Una tienda vende productos electrónicos como un mouse y productos de moda como un mousepad. La tienda ha realizado un análisis de las compras de sus clientes y ha recopilado la siguiente tabla de frecuencias:</p>
+
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Mouse (A)</th>
+<th align="left">Mousepad (B)</th>
+<th align="left">Total(N)</th>
+</tr>
+<tr class="odd">
+<td align="left">Clientes que Compraron</td>
+<td align="left">70</td>
+<td align="left">50</td>
+<td align="left">100</td>
+</tr>
+</table>
+
+<p>Con la frecuencia la probabilidad empírica esta data de la siguiente forma:</p>
 
 <ul>
-<li>La probabilidad: es una medida del grado de creencia de una persona en la ocurrencia de un evento.</li>
+<li><p>\(P(A)=\frac{70}{100}=0.7\): Probabilidad de comprar un mouse.</p></li>
+<li><p>\(P(B)=\frac{50}{100}=0.5\): Probabilidad de comprar un mousepad.</p></li>
 </ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (2/1)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-21">
+
+<ul>
+<li><p>Si 30 clientes además de comprar un Mouse (A) compraron a la vez un Mousepad (B)</p></li>
+<li><p>¿Cuál es la \(P(A \cap B)\) y cual es la probabilidad de comprar un Mousepad dado que compraron un mouse \(P(B | A)\)?</p></li>
+<li><p>¿son \(A\) y \(B\) mutuamente excluyentes?</p></li>
+<li><p>¿son \(A\) y \(B\) eventos independientes?</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (2/3)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-23">
+
+<p><img src="data:image/png;base64,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" width="768" /><img src="data:image/png;base64,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" width="768" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (2/4)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-24">
+
+<p>Primero la probabilidad de la intersección de \(A\) y \(B\): - \(P(A \cap B)=\frac{30}{100}=.3\)</p>
+
+<p>Queremos calcular la probabilidad de que un cliente que compra un mouse también compre un mousepad (\(P(B | A)\)).</p>
+
+<p>Usando la fórmula de probabilidad condicional:</p>
+
+<p>\[ P(B | A) = \frac{P(A \cap B)}{P(A)} = \frac{0.3}{0.7} = 0.43 \]</p>
+
+<p>Esto significa que, dado que un cliente compró un mouse, hay aproximadamente un 43% de probabilidad de que también compre un mousepad.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (2/5)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-25">
+
+<ul>
+<li>¿son \(A\) y \(B\) mutuamente excluyentes?</li>
+</ul>
+
+<p>Debido a que \(P(A \cap B) \neq 0\), entonces comparten un area del espacio muestral y no son mutuamente excluyentes.</p>
+
+<ul>
+<li>¿son \(A\) y \(B\) eventos independientes?</li>
+</ul>
+
+<p>Para determinar si los eventos \(A\) y \(B\) son independientes, podemos verificar si se cumple la siguiente igualdad:</p>
+
+<p>\[P(A \cap B) = P(A) \cdot P(B)=0.7 \cdot 0.5=0.35\]</p>
+
+<p>En este caso, como \(0.3 \neq 0.35\), podemos concluir que los eventos \(A\) y \(B\) no son independientes.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (3/1)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-31">
+
+<p>Imagina que eres el gerente de un supermercado y estás interesado en entender el comportamiento de compra de tus clientes. Has recopilado la siguiente información:</p>
+
+<ul>
+<li>De 100 clientes, 60 compraron manzanas (evento <strong>A</strong>) y 50 compraron naranjas (evento <strong>B</strong>).</li>
+<li>De los clientes que compraron manzanas, 20 también compraron naranjas.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (3/2)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-32">
+
+<p>Podemos representar esta información en la siguiente tabla de frecuencias:</p>
+
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Manzanas (A)</th>
+<th align="left">Naranjas (B)</th>
+<th align="left">Total(N)</th>
+</tr>
+<tr class="odd">
+<td align="left">Clientes que Compraron</td>
+<td align="left">60</td>
+<td align="left">50</td>
+<td align="left">100</td>
+</tr>
+</table>
+
+<p>Con la frecuencia, la probabilidad empírica se calcula de la siguiente forma:</p>
+
+<ul>
+<li>\(P(A)=\frac{60}{100}=0.6\): Probabilidad de comprar manzanas.</li>
+<li>\(P(B)=\frac{50}{100}=0.5\): Probabilidad de comprar naranjas.</li>
+<li>20 clientes compraron tanto manzanas (\(A\)) como naranjas (\(B\)).</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (3/3)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-33">
+
+<p><strong>¿Cuál es la probabilidad de comprar naranjas dado que compraron manzanas?</strong></p>
 
 <ol>
-<li><p>Axioma de la No Negatividad: \[  0 \leq P(A) \leq 1   \quad \text{para todo evento } A. \]</p></li>
-<li><p>Axioma de la Normalización (total): \[ P(S) = 1 \] Donde \(S\) es el espacio muestral.</p></li>
-<li><p>Axioma de la Aditividad: \[ P(A \cup B) = P(A) + P(B) \quad \text{si } A \cap B = \emptyset \] Para eventos mutuamente excluyentes.</p></li>
+<li><p>La probabilidad de la intersección de <strong>A</strong> y <strong>B</strong> (\(P(A \cap B)\)) es:</p>
+
+<p>\[P(A \cap B) = \frac{20}{100} = 0.2\]</p></li>
+<li><p>La probabilidad de comprar naranjas dado que compraron manzanas (\(P(B | A)\)) se puede calcular utilizando la fórmula de probabilidad condicional:</p>
+
+<p>\[P(B | A) = \frac{P(A \cap B)}{P(A)} = \frac{0.2}{0.6} \approx 0.33\]</p></li>
 </ol>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.4 Frecuencia relativa y probabilidad.</h2></hgroup><article  id="tema-4.4-frecuencia-relativa-y-probabilidad.">
+</article></slide><slide class=""><hgroup><h2>Tema 4.9 Probabilidad Condicional, Ejemplo (3/4)</h2></hgroup><article  id="tema-4.9-probabilidad-condicional-ejemplo-34">
+
+<p>Para determinar si los eventos <strong>A</strong> y <strong>B</strong> son independientes, podemos verificar si se cumple la siguiente igualdad:</p>
+
+<p>\[P(A \cap B) = P(A) \cdot P(B)\]</p>
+
+<p>En este caso, como \(0.2 \neq 0.6 \cdot 0.5\), podemos concluir que los eventos <strong>A</strong> y <strong>B</strong> no son independientes.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal</h2></hgroup><article  id="tema-4.10-probabilidad-marginal">
 
 <ul>
-<li><p>La probabilidad de una varible se puede medir de forma empírica cuando se repite un experimiento \(n\) veces y se registra la frecuencia relativa de cada evento.</p></li>
-<li><p>A medida que \(n\) crece la frecuencia relativa de un evento tiende a acercarse a la probabilidad teórica de ese evento.</p></li>
+<li>La <strong>probabilidad marginal</strong> es la probabilidad de un evento sin tener en cuenta el resultado de otros eventos. Se calcula sumando las probabilidades de todos los eventos que incluyen el evento de interés.</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.5 Ejemplo:</h2></hgroup><article  id="tema-4.5-ejemplo">
+<p>Por ejemplo, en el contexto del supermercado:</p>
 
 <ul>
-<li><p>Sea \(X\) la variable aleatoria binaria: lanzar una moneda.</p></li>
-<li><p>Sean \(E_1=Cara\) y \(E_2=Sol\) los eventos del espacio muestral \(S=\{Cara, Sol\}\)</p></li>
-<li><p>Donde \(n\) es el número de experimentos (lanzamiento de moneda): \(P(E_1)\), donde \(n=10\)</p></li>
+<li><p>La probabilidad de comprar manzanas (evento <strong>A</strong>) se calcula sumando las probabilidades de todos los eventos en los que se compran manzanas (es decir, los clientes que compraron solo manzanas y los que compraron tanto manzanas como naranjas). Esto nos da una probabilidad marginal para <strong>A</strong> de:</p>
+
+<p>\[P(A) = \frac{60}{100} = 0.6\]</p></li>
 </ul>
 
-<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-1">
 
-<thead>
+<ul>
+<li><p>De manera similar, la probabilidad de comprar naranjas (evento <strong>B</strong>) se calcula sumando las probabilidades de todos los eventos en los que se compran naranjas (es decir, los clientes que compraron solo naranjas y los que compraron tanto naranjas como manzanas). Esto nos da una probabilidad marginal para <strong>B</strong> de:</p>
 
-<tr>
+<p>\[P(B) = \frac{50}{100} = 0.5\]</p></li>
+</ul>
 
-<th style="text-align:right;">
-
-1
-
-</th>
-
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Manzanas (A)</th>
+<th align="left">Naranjas (B)</th>
+<th align="left">Total(N)</th>
 </tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td style="text-align:right;">
-
-1
-
-</td>
-
+<tr class="odd">
+<td align="left">Clientes que Compraron</td>
+<td align="left">60</td>
+<td align="left">50</td>
+<td align="left">100</td>
 </tr>
-
-</tbody>
-
+<tr class="even">
+<td align="left">Probabilidad Marginal</td>
+<td align="left">0.6</td>
+<td align="left">0.5</td>
+<td align="left">1</td>
+</tr>
 </table>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.4 Frecuencia relativa y probabilidad (1/2).</h2></hgroup><article  id="tema-4.4-frecuencia-relativa-y-probabilidad-12.">
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (1/1)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-11">
+
+<p>Supongamos que tienes una bolsa con 100 canicas: 30 rojas, 40 azules y 30 verdes. Si eliges una canica al azar, las probabilidades marginales de elegir una canica de cada color son:</p>
+
+<p>\(P(\text{Roja}) = \frac{30}{100} = 0.3)\) \(P(\text{Azul}) = \frac{40}{100} = 0.4)\) \(P(\text{Verde}) = \frac{30}{100} = 0.3)\)</p>
 
 <ul>
-<li>Al incrementar el número de experimentos, \(n=100\), observamos que \(P(E_1)=P(E_2)=0.5\), la frecuencia relativa converge a la probabilidad teórica.</li>
+<li><p>Ahora, supongamos que algunas de las canicas están marcadas con una \(X\): 10 rojas, 5 azules y 5 verdes.</p></li>
+<li><p><strong>Si se selecciona una canica al azar y resulta ser marcada, ¿cuál es la probabilidad de que esa canica sea roja?</strong></p></li>
 </ul>
 
-<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (1/2)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-12">
 
-<thead>
+<ul>
+<li><p>Queremos calcular la probabilidad de que sea roja \(P(\text{Roja})\) dado que salió marcada \(P(\text{X})\).</p></li>
+<li><p>Necesitamos la formula de probabilidad condicional:</p></li>
+</ul>
 
-<tr>
+<p>\[ P(Roja | X) = \frac{P(Roja \cap X)}{P(X)}  \]</p>
 
-<th style="text-align:right;">
+<ul>
+<li>Donde la \(P(X)\), es la probilidad marginal definida como la suma de probabilidades de sacar una bola marcada de cada color:</li>
+</ul>
 
-0
+<p>\[(\frac{10}{100}+\frac{5}{100}+\frac{5}{100})=\frac{2}{10}=.2\]</p>
 
-</th>
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (1/2)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-12-1">
 
-<th style="text-align:right;">
+<ul>
+<li>En tabla la probabilidad marginal:</li>
+</ul>
 
-1
-
-</th>
-
+<table class = 'rmdtable'>
+<col width="29.166667%" />
+<col width="13.888889%" />
+<col width="13.888889%" />
+<col width="15.277778%" />
+<col width="18.055556%" />
+<col width="9.722222%" />
+<tr class="header">
+<th align="left"></th>
+<th align="left">Roja (A)</th>
+<th align="left">Azul (B)</th>
+<th align="left">Verde (C)</th>
+<th align="left">Marcada (X)</th>
+<th align="left">Total(N)</th>
 </tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td style="text-align:right;">
-
-0.56
-
-</td>
-
-<td style="text-align:right;">
-
-0.44
-
-</td>
-
+<tr class="odd">
+<td align="left">Canicas</td>
+<td align="left">30</td>
+<td align="left">40</td>
+<td align="left">30</td>
+<td align="left">20</td>
+<td align="left">100</td>
 </tr>
-
-</tbody>
-
+<tr class="even">
+<td align="left">Probabilidad Marginal</td>
+<td align="left">0.3</td>
+<td align="left">0.4</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">1</td>
+</tr>
 </table>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.5 Reglas de probabilidad elementales</h2></hgroup><article  id="tema-4.5-reglas-de-probabilidad-elementales">
-
 <ul>
-<li>Adición de eventos:</li>
+<li>La probabilidad de que sea roja y marcada \[P(Roja \cap X) = \frac{10}{100}=0.1\]</li>
 </ul>
 
-<p>\[ P(A \cup B) = P(A \text{ o } B) = P(A) + P(B) - P(A \cap B) \]</p>
-
-<p>Recuerda que, is \(A\) y \(B\) son mutuamente excluyentes: \(P(A \cap B)=P(A \text{ y } B)=0\)</p>
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (1/3)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-13">
 
 <ul>
-<li>Multiplicacion de eventos:</li>
+<li>La probabilidad de que sea roja \(P(\text{Roja})\) dado que salió marcada \(P(\text{X})\). \[ P(Roja | X) = \frac{P(Roja \cap X)}{P(X)}= \frac{0.1}{0.2}=0.5  \]</li>
 </ul>
 
-<p>\[  P(A \cap B) =  P(A \text{ y } B) = P(A)*P(B)\], cuando \(A\) y \(B\) son independientes.</p>
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (2/1)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-21">
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.6 Reglas de probabilidad elementales</h2></hgroup><article  id="tema-4.6-reglas-de-probabilidad-elementales">
+<p>Supongamos que eres el gerente de una tienda de ropa y tienes 100 clientes: 30 compraron camisas (evento A), 40 compraron pantalones (evento B) y 30 compraron zapatos (evento C). Si un cliente hace una compra al azar, las probabilidades marginales de comprar cada tipo de ropa son:</p>
 
 <ul>
-<li><p>Dos eventos independientes no es lo mismo que mutuamente excluyentes.</p></li>
-<li><p>\(A\) and \(B\) son independientes si \(P(A \cap B) = P(A)\times P(B)\)</p></li>
-<li><p>\(A\) and \(B\) son mutuamente excluyentes si \(P(A \cap B) = P(A)\times P(B)=0\)</p></li>
+<li><p>\(P(\text{Camisa}) = \frac{30}{100} = 0.3\)</p></li>
+<li><p>\(P(\text{Pantalones}) = \frac{40}{100} = 0.4\)</p></li>
+<li><p>\(P(\text{Zapatos}) = \frac{30}{100} = 0.3\)</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.7 Diagramas de Venn: Eventos Mutuamente Excluyentes</h2></hgroup><article  id="tema-4.7-diagramas-de-venn-eventos-mutuamente-excluyentes">
+<p>Algunos de los clientes son miembros de un programa de lealtad (marcados con una X): 10 que compraron camisas, 5 que compraron pantalones y 5 que compraron zapatos.</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (2/2)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-22">
+
+<p>Si un cliente hace una compra al azar y resulta ser miembro del programa de lealtad, ¿cuál es la probabilidad de que ese cliente haya comprado una camisa?</p>
 
 <ul>
-<li>Dos (o más) eventos mutuamente excluyentes, no tienen elementos comunes en el espacio muestral.</li>
+<li><p>Queremos calcular la probabilidad de que compre una camisa \(P(\text{Camisa})\) dado que es miembro del programa de lealtad \(P(\text{X})\).</p></li>
+<li><p>Necesitamos la fórmula de probabilidad condicional:</p></li>
 </ul>
 
-<p><img src="data:image/png;base64,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" width="720" /></p>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.7 Diagramas de Venn: Eventos Mutuamente Excluyentes</h2></hgroup><article  id="tema-4.7-diagramas-de-venn-eventos-mutuamente-excluyentes-1">
+<p>\[ P(\text{Camisa} | X) = \frac{P(\text{Camisa} \cap X)}{P(X)}  \]</p>
 
 <ul>
-<li>Lanzamiento de una moneda.</li>
-<li>Lanzamiento de un dado.</li>
-<li>Colores de una luz de tráfico.</li>
-<li>Sexo de un recién nacido.</li>
-<li>Lluvioso o soleado.</li>
+<li>Donde \(P(X)\), es la probabilidad marginal definida como la suma de las probabilidades de que un cliente miembro del programa de lealtad compre cada tipo de ropa:</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Diagramas de Venn: Eventos Independientes.</h2></hgroup><article  id="tema-4.8-diagramas-de-venn-eventos-independientes.">
+<p>\[(\frac{10}{100}+\frac{5}{100}+\frac{5}{100})=\frac{2}{10}=0.2\]</p>
+
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (2/2)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-22-1">
 
 <ul>
-<li>Dos (o más) eventos independientes con elementos comunes en su espacio muestral:</li>
+<li>En la tabla, la probabilidad marginal:</li>
 </ul>
 
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAJACAMAAABMnTH2AAAAbFBMVEUAAAAAADoAAGYAOjoAOpAAZrY6AAA6Ojo6ZpA6kNtmAABmZjpmkLZmtttmtv+QOgCQ2/+2ZgC2Zjq2kGa229u22/+2///bkDrbtmbb25Db2//b////AAD/tmb/25D/27b/29v//7b//9v///80vEAWAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAeXklEQVR4nO3c7brk6Fme4WVwDIYEMiRgIBiI2f99ZKa7PVWqUkl6pVt6P3SeP3Ic+ZNUXXp0z+rV4/n6LwCa9FX7AwAwz0ADNMpAAzTKQPPR17vaH6lzilLGffBqZkUW1P60PVCUnVwDP2yZCrtSRFEOcgR3d3AYzMq7dFFJ78uzv6v0DFiU9LIaaQz03Zz+49ntJuX8n3jvVpQHz/w+rvtz811G+rqiRvqmPO97qDCZg6+0olzAox5ezdd60ElRlIt4zENr4nVu4kPEtPBlxirKAk94XC29xINMSkNfYpCiLPN0R9Xgy9v5pDT44TsvyipPdkjtvrW9Lkq7H7vXomzhsY6n+Re2+Q/4qvkP3PwHZCfPdDCdvKqdfMxv+vioPRVlMw90JF29pH182C4+5A99FKWEpzmKHn8V2fYn7vFv4Lr7wCzzLEfQ45T80Ojn/uo3aacfm1keZP96XZIfGvz4DX6kEp1/fJ54ir0b4V1sa1Ca+jA72ehBeIR9G+Y1bGZQWvkch9noEXh+PRvqDWxiUBr4CEFNJOUID69bA758lQdlwKJDfqc78ej6NOzPRvW+2KhFx/1id+C5dWjYdf6uxrdTlCZ5at25w9t28Ve8QdLxv+GYPLPO3OVFu/B73iTpTb7mYDyxrtzpJbvou94o6Y2+6jA8r47c7QW74PveLOnNvu4APK1u3PHlOvk73zDpDb9y1zyrTtz1xTrxe9806U2/dqc8qS7c+aU66bvfOOmNv3p3PKcO3P2FOuH73zzpzb9+Rzyl5nmZ4g0klaATnlHjvEjfBTtI+o0MPfCEmuYlegi1kPRXUrTP82mYF2gq0EPSCTla5+m0y8vz5uCg2KM3krTNs2mVF2fWkUGRdI6Jbpkn0yhvzSd7B0XRT0x0uzyXJnljluyqI+kCcVrlsbTI+7KiOJCiKwRqk4fSHu/KurJG/gy/TqImeSatMSbbbM+k6DYyNcgTaYsx2WxjKUU3U6o9HkhLjEmRDbUULaJWazyOhng9Cq0GU7SQYI3xNJrh3dhhMZqiO4jWFM+iFV6MXRayKbqLbC3xKNrgrdjtQzpFd5OuHR5EE7wSB8zGU/QA8ZrhObTA+3DM+6AoeoyJboSnUJ+X4bCXhIoeJmEbPITqvAoJzxUVTVCxBR5BZV6DkF9DKhoiZAM8gbq8BDnfUyqaI2V1HkBV3oCkry//y+4sOWuTvyLnH2af0wStTP16HH+an6DzFK1K+2ocftqX33GcQNGapK/E2cf9XPTffiZsmqL1KF+HfY77sc8WOk/RaoSvwsXH/brPFjpP0Vp0r8G9p3097fO3hRY4StFKVL+eY4+b7rOFzlO0DtEv59TTXufZrznOoGgNml/NnafN7bOFzlO0Askv5srTZufZrzlOoOj1BL+WE0/7tM8WOk/Ry+l9JQeeNv/rDRN9FkUvpvaFXHfa8j5b6DxFryX2dZx22so8+7vCMyh6Ja0v47DTNuyzhc5T9EJSX8VZp23aZwudp+h1lL6Io07buM8WOs8voi+j8yVcdNzmfbbQee75KjJfwT3HFeyzhT6BpNdQ+QKOOa5ony30CSS9hMjnc8pxhftsoU8g6RU0Pp1DjiveZwt9AkkvIPHZnHHcjn220CdQ9HwSn8wuxO3aZwt9AkVPp/DJ3HDazn220HmKnk7gc7ngtN37bKHzFD2bvqdywGkH9tlC5yl6MnnP5HzTDu2zhc5T9Fzqnsjxph3cZwudp+ipxD2P0007vM8WOk/RM2l7GoebFthnC52n6ImkPYuzTYvss4XOU/Q8yp7E0aaF9tlC5yl6GmHP4WTTYvtsofMUPYuup3CwacF9ttB5ip5E1jM417ToPv+y0LW/0GgUPYesJ7DPaeF9ttB5ip5C1RO41bT0PvslR5yipxA1z6WmxffZQucpegZN4xxqWvwXHBb6DIqeQNI0Z5p2yj5b6DxF8xQNc6RpJ+2zhc5TNE7QLCeadto+W+g8RdP0jHKgaSfus4XOUzRMzijnmXbmPlvoPEWz1ExynGnn7rOFzlM0Sswgt5l26i84fix07e84Gm9BkpY5LjPt/H220HnegyApY9xl2hX77JcceYrmSBnjLNOu2GcLfQJFY5RMcZRp1+yzX3Lk+WdejJAhbjLtkl9wWOhTeBtSdMxwkWnX7bNfcuRJGiJjhntMu26fLfQJFM2QMcI5pl25zxb6BIpGqJjg/U678BccPxa69jcejXciQsQAtxh38T5b6DxvRYKGx7nEuMv32S858hQN0PA4h5h29S84LPQpFD1OwsOcYVqNfbbQeYoep+BRrjCuyj77NXSeoocpeJB9jqu0zxY6T9GjBDzGPsfV+QWHgT6DokcJeIwLjKu2zxY6T9GD9DvE/cVV3Gd/Txin6EHyHeH84ur9guP7Qtf+/qNR9Bj5DrDPcXX32ULnKXqIege4vbjK++yXHHGKHiLefi4vrvY++xE6T9EjxNvNjwZxtX/BYaHPoOgB2u3m7uIa2Ge/5IhT9ADp9nJ1cS3ss4XOU3Q/5XZydHEt/ILjF55smqK7KbeTm4trZJ8tdJ6iewm3j4uLa2afDXScP2/upds+Di6unYG20HGK7qTbLu4trqF9NtB5ku4j2x7+xBbXyt8Qfuf5pim6j2x7uLa4pvbZQOdJuotqO7i1uLb22ULn+VPnLqLt4NTS2voFx78Z6BNIuodo5VxaWnP7bKFPIOkOmpVzaGnt7bP/wXeeojtoVsydpTW4z36EPoGk5SQr5UertAZ/wfELzzlN0XKSlXJlaW3us4HOk7SYYoXcWFqj+2yh8xQtplghN5bW8EB71mGKlhKsjAtLa3af/Qidp2gpwcq4sLSGB9pCxylaSK8i7iut5X32S444RQvJVcR5pTU90H6EjlO0jFwlXFda2/tsofMULaJWCceVZqDvRtEiahVwW2mt77OFzlO0hFjb+QuOOAN9P4qWEGs7l5XW/j5b6DxFC2i1mbuKM9B3pGgBrTZzV2k97LOFzlN0O6m2clVxBvqeFN1Oqo38DWFcH/tsofMU3UypjdxUnIG+K0U3U2ojN5XWyz5b6DxFtxJqGxcVZ6DvS9GthNrGRaX1s88WOk/RjXTaxkGlGeg7U3QjnTZxT2k97bOFzlN0G5k2cU5pBvreFN1Gpi1cU1pf+2yh8xTdRKUtHFOagb47RTdRaQO3lNbbPlvoPEW3EGkDp5RmoFF0C5HWuaS0/vbZQucpuoFG6xxSmoHGe7WJRqvcUVqP+2yg4xTdQKNV7iity4G20HGKrpNojStK63OfDXScouskWuOK0jodaAsdp+gqhdY4ojQDzXeKrlJohRtK63WfDXScoqsUWuGG0rodaAsdp+gagVY4oTQDzZ8pukagZS4ord99NtBxiq4RaJkLSut4oC10nKIr9FnkftJ63mcDHafoCn0WuZ+0rgfaQscpukyeRc4nzUDzTNFl8ixxPWl977OBjlN0mTxLXE9a5wNtoeMUXaTOEseTZqCZUnSROgvcTlrv+2yg4xRdpM4Ct5PW/UBb6DhFl4izwOmkGWheKbpEnM9cTlr/+2yg4xRdIs5nLidtgIG20HGKLtDmM4eTZqB5p+gCbT5yN2kj7LOBjlN0gTYfuZu0IQbaQscp+pk0HzmbNAPNHEU/k+YTV5M2xj4b6DhFP5PmE1eTNshAW+g4RT9S5gM3kzbKPhvoOEU/UuYDN5M2zEBb6DhFPxHmAyeTZqD5RNFPhJnnYuIMNJ8o+okw81xM3DgDbaHjFP1Al3kOJm2gfTbQcYp+oMss9xJnoPlM0Q90meVe4kYaaAsdp+g8WWY5lzgDzQJF58kyx7XEDbXPBjpO0XmyzHEtcQaaJYrOk2WOa4kba6AtdJyis1SZ41jSBttnAx2n6CxVZriVOAPNMkVnqTLDrcQZaJYpOkuVGW4lbbR9NtBxis5SZYZbSRtuoC10nKJzRHnnUtLG22cDHafoHFHeuZQ0A80qReeI8s6lpBloVik6R5R3LiVtwIG20HGKztDknUNJM9CsU3SGJm/cSdqI+2yg4xSdockbd5JmoNlA0RmavHEnaUMOtIWOU/SdJG+cSZqBZgtF30nyypWkjbnPBjpO0XeSvHIlaQaaTRR9J8krV5I26EBb6DhF3yjyypGkGWi2UfSNIq8cSZqBZhtF3yjywo3EGWi2UfSNIi/cSJyBZhtF3yjywo3EjTrQFjpO0VeCvHAicQaajRR9JciUC4kbdp8NdJyirwSZciFxBpqtFH0lyJQLiTPQbCbpCz2mHEicgWYzSV/oMeVA4gw0m0n6Qo8pB5I27j4b6DxJX+gx5UDSDDTbSfpCjykHkjbwQFvoPEmn5JhyH2kGmgKSTskx4TzSRt5nA50n6ZQcE84jzUBTQtIpOSacR9rQA22h4xSdkmPCeaQZaEooOiXHhPNIM9CUUHRKjgnnkWagKaHolBwTziPNQFNC0Sk5JpxH2tgDbaHjFJ1QY8J1pBloiig6ocYzx5E2+D4b6DhFJ9R45jjSDDRlFJ1Q45njSDPQlFF0Qo1njiPNQFNG0Qk1njmONANNGUUn1HjmONIMNGUUnVDjmeNIM9CUUXRCjWeOI81AU0bRCTWeuI200ffZQMcpOqHGE7eRZqAppOiEGk/cRpqBppCiE2o8cRtpBppCik6o8cRtpBloCik6ocYTt5FmoCmk6IQaT9xGmoGmkKITajxxG2kGmkKKTqjxxG2kDT/QFjpO0WdiPLiMOANNKUWfifHgMuIMNKUUfSbGg8uIM9CUUvSZGA8uI85AU0rRZ2I8uIw4A00pRZ+J8dDHZfz09Yv/UftjbGOga/vT3389/OVf/9/an2dd60WvJcZDF5fx///m26v2F/9U+4NsYqBrmwz0z/76/9X+RGtaL3otMR66uIw//njR/q72B9nEQNf2OtDt/9mr9aLXEuOhi8v4qZf37BsDXdvbQDf/j/bWi15LjIceLuPff/f19Zu/7eV3HOPvcx8D/eOf5v/5Dz38o731otcS46GHy/jDz2/Yb//l55X++n3tj7KBga7ueaCn/5dWtV70WmI8dHAZ396w33/7P3/b/N/2GOgGTDf5JwPdGTEeOriMX37D8Rf/9O3n6N/879ofZp2Bru79J+jW/+jVetFrifHQwWX8+Ano3zv5HYeBru55oP/j73v4y4vWi15LjIf2L+PbvwT9dz/eug5+x2Ggq3v9tzja/4NX60WvJcZD+5fxxz//BPSHHv59KQPdgJeB/u0/1v5Aq1ovei0xHtq/jF//jufb7zha/9seA92At5+g/1ftT7Sm9aLXEuOh+cv4Nsvffm7+Uxe/TTTQ9b3/D1Va/7uL1oteS4yH5i/jD49V7uN3HAa6usn/UOX//K6D30K3XvRaYjy0fhn9/WcVbrDQXRzNr4fyxw5+hG696LXEeGj9Mr79hqO3v5GvPaBna/1opgP97V8Davxf/2m96LXEeGj9Mn76etX4z0IGuj4D3TcxHhq/jB//JejJvzTV9qtmoOub+RVH478Za73otcR4aPwy/jj9pcZPPfyOw0DX9jzQf/rn33Xw567Wi15LjIfGL+On6Y/MPfx9j4Gu7v1fs2v9385svei1xHho+zK+/Ybj9y//9/ZfttoDera2j8a/B907MR7avoy3/4LdTx38q9AGura3gW59nxt/Da8mxkPTl/H+30fq4y98ag/o2Zo+mv96Gejf/NX//NfaH2hV60WvJcYTp5FmoCml6DMxnjiNNANNKUWfifHEaaQZaEop+kyMJ04jzUBTStFnYjxxGmkGmlKKPhPjidNIG36gnUyaohNqPHEbaQaaQopOqPHEbaQZaAopOqHGE7eRZqAppOiEGs8cR9roC+1i0hSdUOOZ40gz0JRRdEKNZ44jzUBTRtEJNZ45jjQDTRlFJ9R45jjSDDRlFJ1Q45njSBt8oB1MnKQTajxzHGkGmjKSTqjxzHGkGWjKSDqhxjPHkWagKSPphBoTriNt7IV2L3GSTqgx4TrSDDRFJJ1QY8J1pBloikg6ocaE60gz0BSRdEKNCdeRZqApIumEGhOuI23ogXYucZJOyTHhPNIMNCUknZJjwnmkGWhKSDolx4TzSDPQlJB0So4p95E28kK7ljhJp+SYch9pBprtFH2hx5QDSTPQbKfoCz2mHEiagWY7RV/oMeVA0gw02yn6Qo8pB5I28EA7ljRFXwky5ULSDDSbKfpKkCkXkmag2UzRV4K8cCJp4y60W0lT9JUgL5xI2rAD7VTiJH0lyAsnkmag2UrSV4K8cCJpBpqtJH0lyCs3kjbqQruUOElfCfLKjaQNOtAOJU7SN4q8ciRpBpptJH2jyCtHkmag2UbSN4q8ciRpBpptJH2jyBtXkjbmQruTOEnfKPLGlaQZaLZQ9J0kb5xJmoFmC0XfSfLGmaQZaLZQ9J0k79xJ2pAL7UzSFH0nyTt3kjbiQLuSNEVnaPLOoaQZaNYpOkOTdw4lzUCzTtEZmrxzKGkGmnWKztBkhktJG3ChHUmaojM0meFS0sYbaDeSpugcUWY4lTQDzRpF54gyw6mkGWjWKDpHlDluJW24hXYiaYrOEWWOW0kbbaBdSJqis1SZ41jSDDTLFJ2lyhzHkmagWaboLFXmOJa0wQbagaQpOk+WWc4lbayFdh9pis6TZZZzSTPQLFF0niyznEvcSAvtPNIU/UCXWe4lzkDzmaIf6DLPwaQNNNCOI03RT4SZ52Lixllox5Gm6CfCzHMxcQaaTxT9RJh5LiZumIF2G3GSfiLMB04mbpSFdhpxkn4izAdOJs5AM0/Rj5T5wM3EDTLQLiNO0o+U+cTRpBlo5kn6kTKfOJq4MRbaYcRJ+pEynziauCEG2l3ESfqZNB85mzQDzRxJP5PmI2eTZqCZI+ln0nzkbNIMNDMUXaDNZw4nbYCFdhRxki7Q5jOHk2ageSfpAm0WuJy0/hfaTaQpukScBU4nzUDzStEl4ixwOmndD7STSFN0kTpLHE9a7wvtItIUXaTOEseTZqCZUnSROkscT1rnA+0g0hRdJs8i55PW90K7hzRFl8mzyPmkdT3QziFO0mXyLHM/aT0vtGtIU3SFPsscUFrHA+0Y4iRdoc8yBxTX70I7hjhJV+izwgWldTvQTiFO0jUCrXBCcb0utFOIk3SNQCucUJyB5jtFVym0xhHF9bnQDiFO0lUKrXFEcQaaXyi6TqJVziiuy4V2B2mKrpNolTOK63GgnUGaohtotM4hpRlovFebaLTOIcX1t9COIE3RLUTawCmlGWgU3UKkDZxSWncD7QTiJN1CpC3cUlpvC+0C0hTdRKUtHFNaZwPtAOIk3USlTVxTWl8L7fnHSbqJSpu4prSuBtrjj5N0G5m2cU9pPS20px8n6TYybeOe0joaaA8/TtKNdNrIRaX1s9CefZykG+m0kYtK62agPfo4SbcSaqMvNxX21ctCe/Jxkm4l1FZuKq2Tgfbg4yTdTKnNXFVaHwvtucdJuplSm7mqtC4G2mOPk3Q7qbZzV2k9LLSnHifpdlJt567SOhhoDz1O0gJaFXBZae0vtGceJ2kBrQq4rLTmB9ojj5O0hFgl3FZa6wvtiaf5HxQUEauE20prfKA98DhJi6hVxHWltb3QnneaomXkKuK80poeaI87TtIycpVxX2ktL7SnnaZoIb3KOLC0hgfaw07zN4Sl9CrkwtLaXWjPOk3RUoIV8jNAWrP/2VFPOk3RYoqVcmRpBvouFC2mWDFXltbmQnvOaYqWk6yYM0sz0PegaDnJyrmztBYX2lNOU3QHzcr5e8K0Fv+e0ENOU3QHzXZwaWntDbRnnKboHqLt4dbSmltojzhN0T1E28OtpbX2Sw5POE3RXVTbxbWltTXQ/pohTdF9VNvFtcW1tNDWJE3RnWTbx72ltTXQtWuMRtGddNvHwcW1s9Aebpqiewm3k5NLa+bvCf1xPE3R3YTbycnFtTPQtUuMRtHdlNvL0cW1sdAebJqi+0m3lz+2xTXxSw7PNU3RA6TbzdnFtTHQtSuMRtEDtNvP4cXVX2gPNU3RI8Tbzx/d4ur/ksMzTVP0CPEOsNBxtRfaE01T9BD1jnB8cXUH2j9y0xQ9Rr1DXF9c1YX2PNMUPUa+Q/x8EFfzlxyeZpqiB+l3jIWOqzfQHmaaokfpd5ATjKu10B5lmqKHCXiUG0yr9UsOTzJN0cMUPMwVptVZaM8xTdHjJDzMn+Piagy0x5imaICExznEuOsX2kOMUzRAwwAvd9rlv+TwCOMUTRAxwS2mXT/Qtb/xaPwjL0LECMeYdu1Ce35p9jlDxQjnmHbpLzk8vjhFM2TM8IqnXbjQHl6coiE6hrjItMsG2j7HSZqiY4qTTLtqoT25NPscI2SKo0y76JccnluaVyFHyRhnmXbJQntscYrmSJnjVU+7YKE9tDhFg7QMcplpVwx07e84Gv/IS9IyyWmmnb3QnliafY4SM8lxpp38Sw4PLE3RLDWjnGfaqQvtcaUpGiZnlgNNO3GhPaw0RdP0DHOiaecttEeVpmiaoGkWOu2shfag0hSNUzTOlaadM9D+SZqmaJ6iec407YyFtiZpip5A0jyHmnbCLzk8pDRFz6DpCZxqWnyhPaI0RU8h6hkca1p4oT2gNEXPoeopnGtadKE9njRFTyLrORxsWnChPZw0Rc+i60mcbFpsoT2aNEVPI+xZHG1aaKE9mDRFz6PsaZxtWmShPZY0RU8k7XkcblpgoT2UNEXPpO2JnG7a8YX2SNIUPZO4Z7LQaUcX2gNJU/RU6p7KQqcdW2jPI03Rc6l7LvebdmShPY00RU8m78lccNr+hfYs0hQ9m75nc8Npexfak0hT9HQCn84Vp+1a6C/PIUzRCyh8PnectmOhrUmaoleQ+AIuOa14oT2CNEUvIfIVHHNa4UJ7AGmKXkPlSzjntKKFlj9N0YvIfA0HnVaw0OKnKXoVnS/ipNM2L7T0aYpeRuirOOq0r20TLXyaotdR+jL+taS0TQutepqiF5L6OhY6bn2iNU9T9EpaX8ltp60ttOJpil5K7Eu57rilhfZnljRFL6b2tdx33OeFtiZpil5N7ou58LgPC21M0hS9nuBXc+Vxswutc5qiFSh+OXceN7PQIqcpWoPmFTj1tLeFljhN0SpEr8Gxp00X2h9S0hStRPUqnHva878QbU3SFK1F9jocfNpjobVNU7Qa4SvxM0ncj4UWNk3RepSvxULHffshWtY0RSuSvh6Hn/b15R97aYpWpX1FTj/NmqQpWpf4Nbn+qK8vP0JnqVmb/FV5AYK+x5Q0R8vq9K/MOxDyCClpiI71eQK1mZOI54ySJqjYAo+gPm/CYa8JFT3MVTbBM2iAd+Gg94CSHqNfIzyFJngfDpiNp+gR6rXCY2iDN2K3T+kk3Uu5dngQrfBW7LKQTdF9dGuIJ9EM78UOy9EkLadZUzyLhng3Cq0GU7SUYm3xMFri7SiyJZekJdRqjcfRFm/IZhtTKbqZ/5BJezyPxnhHNtoeStJtdGqQJ9Ic78kGRZH8ZLiBRk3yTNpjT1aVFlJ0jUJt8lBaZKIX7amj6BJ1WuWxtMlEf7QzjaIfSdMuz6VV3ppZB7IoOkuWlnky7fLmvDmYRNF3kjTNs2mZQZkI5FB0So7GeTptMyi/CqVQ9EGL5nk8rfMSfRPMoOh3OnTAA2qfFymdQFENOuER9eDmL9MJX//mRW///bvhIfXhxi/USV/9xkVv/d074zH14qYv1Ylf+6ZFb/u9u+RB9eOGL9bJX/mGRW/5nTvmUfXkZi/XBV/3ZkVv932752H15UYv2EVf9UZFb/VdB+Fx9eYmL9mFX/MmRW/zPYfigfXnBi/axV/xBkVv8R0H5JH1aPCXrcLXG7zo8N9vWB5an8Z94b4qfbVxi1ZLynEeW6/GfOtqfquRiw73te7Cg+vXcG9e9S803JgN94Vux7Pr2kDvXyNb0sjHSBjoq9yXx9e5Qd7Clr7FGEmH+BJ4gv3rflDa+/ztfaIyvX9+/sxDHELHG93qR2/0Y23QalF28BhH0eVr2fSHbvrDfdLlh+YjT3Ignb2bHWxJBx/xWWcfl3Ue5lh6eUO/utmSXj5oP0Up4HmOpv0X9av9jzjV/OftrihbeaQD+mr4hW33ky1SlCo81kE1OdLtfaISinI5j3ZkTU1KQx9lv6b+udfOJ+Esnu7oWliUFj5DThMj3cBH4AIe8B3UnJQm5iyv5rcasyhzPOO7uHoov55d8//l1WoWHTQpLzznW7nm/b7TktQoOnhSnnjWt3Puy37HFVGUs3jo9/T1Lvj/XuhDdkVRTuDJ39yuWZkZI1PyZ7uaKMosT5/vliZig9ofv0GKcpgzYMp4xCnKXg4DoFEGGqBRBhqgUQYaoFEGGqBR/w0PLlhLtQyleQAAAABJRU5ErkJggg==" width="720" /></p>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Diagramas de Venn: Eventos Independientes.</h2></hgroup><article  id="tema-4.8-diagramas-de-venn-eventos-independientes.-1">
+<table class = 'rmdtable'>
+<col width="25.609756%" />
+<col width="14.634146%" />
+<col width="19.512195%" />
+<col width="15.853659%" />
+<col width="15.853659%" />
+<col width="8.536585%" />
+<tr class="header">
+<th align="left"></th>
+<th align="left">Camisa (A)</th>
+<th align="left">Pantalones (B)</th>
+<th align="left">Zapatos (C)</th>
+<th align="left">Miembro (X)</th>
+<th align="left">Total(N)</th>
+</tr>
+<tr class="odd">
+<td align="left">Clientes</td>
+<td align="left">30</td>
+<td align="left">40</td>
+<td align="left">30</td>
+<td align="left">20</td>
+<td align="left">100</td>
+</tr>
+<tr class="even">
+<td align="left">Probabilidad Marginal</td>
+<td align="left">0.3</td>
+<td align="left">0.4</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">1</td>
+</tr>
+</table>
 
 <ul>
-<li><p>Lanzamiento de un dado: Evento \(A\): Obtener un número par (2, 4 o 6). Evento \(B\): Obtener un número mayor que 3 (4, 5 o 6).</p></li>
-<li><p>Selección de cartas de una baraja: Evento \(A\): Seleccionar una carta roja. Evento \(B\): Seleccionar una carta con un valor numérico (no figura).</p></li>
+<li>La probabilidad de que compre una camisa y sea miembro \[P(\text{Camisa} \cap X) = \frac{10}{100}=0.1\]</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (1/1)</h2></hgroup><article  id="tema-4.8-ejercicios-11">
+</article></slide><slide class=""><hgroup><h2>Tema 4.10 Probabilidad Marginal, Ejemplo (2/3)</h2></hgroup><article  id="tema-4.10-probabilidad-marginal-ejemplo-23">
 
 <ul>
-<li><p>Experimento de lanzar un dado.</p></li>
-<li><p>Define el espacio muestral \(S\)</p></li>
-<li><p>Define el espacio muestral del evento \(A\): ocurra un número par (divisible entre 2 sin residuo).</p></li>
-<li><p>Define el espacio muestral del evento \(B\): ocurra un número impar (divisible entre 2 con residuo).</p></li>
-<li><p>Define el espacio muestral del evento \(C\): ocurra un número primo ( tiene exactamente dos divisores: 1 y el propio número, excluye el uno).</p></li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (2/1)</h2></hgroup><article  id="tema-4.8-ejercicios-21">
-
-<ul>
-<li>El espacio muestral:</li>
-</ul>
-
-<p>\[ S = \{1, 2, 3, 4, 5, 6\} \]</p>
-
-<ul>
-<li>El evento \(A\), un número par:</li>
-</ul>
-
-<p>\[ A = \{2, 4, 6\} \]</p>
-
-<ul>
-<li>El evento \(B\), un número impar:</li>
-</ul>
-
-<p>\[ A = \{1, 3, 5\} \]</p>
-
-<ul>
-<li>El evento \(C\), un número primo:</li>
-</ul>
-
-<p>\[ A = \{2, 3, 5\} \]</p>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (3/1)</h2></hgroup><article  id="tema-4.8-ejercicios-31">
-
-<p>Define los siguientes eventos:</p>
-
-<ul>
-<li><p>\(A \cup C\): el evento de que ocurra un número par o primo.</p></li>
-<li><p>\(B \cap C\): el evento de que ocurra un número impar y primo.</p></li>
-<li><p>\(A \cap B\): el evento de que ocurra un número par y impar.</p></li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (4/1)</h2></hgroup><article  id="tema-4.8-ejercicios-41">
-
-<p>El evento de que ocurra un número par o primo:</p>
-
-<p>\[ A \cup C = \{2, 3, 4, 5, 6\} \]</p>
-
-<p>El evento de que ocurra un número impar y primo:</p>
-
-<p>\[ B \cap C = \{3, 5\} \]</p>
-
-<p>Si \(A\) y \(B\) son mutuamente excluyentes: \(A \cap B = \emptyset\); en otras palabras, un número par y un número impar no pueden ocurrir simultáneamente.</p>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (1/2)</h2></hgroup><article  id="tema-4.8-ejercicios-12">
-
-<p>Sea lanzada una moneda y un dado; sea el espacio muestral \(S\) consistente de los doce elementos: \[ S = \{H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6\} \]</p>
-
-<p>Expresar explícitamente los siguientes eventos:</p>
-
-<ul>
-<li><p>\(A = \{\text{cara(H) y un número par aparecen}\}\).</p></li>
-<li><p>\(B = \{\text{aparece un número primo}\}\).</p></li>
-<li><p>\(C = \{\text{sol(T) y un número impar aparecen}\}\).</p></li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (2/2)</h2></hgroup><article  id="tema-4.8-ejercicios-22">
-
-<ul>
-<li><p>Ocurra \(A\) o \(B\).</p></li>
-<li><p>Ocurran \(B\) y \(C\).</p></li>
-<li><p>¿Cuáles de los eventos \(A\), \(B\) y \(C\) son mutuamente excluyentes?</p></li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (3/2)</h2></hgroup><article  id="tema-4.8-ejercicios-32">
-
-<ul>
-<li><p>Cara y número par: \(A = \{H2, H4, H6\}\).</p></li>
-<li><p>Un número primo:</p></li>
-</ul>
-
-<p>\(B = \{H2, H3, H5, T2, T3, T5\}\).</p>
-
-<ul>
-<li>sol(T) y un número impar aparecen:</li>
-</ul>
-
-<p>\(C = \{T1, T3, T5\}\).</p>
-
-</article></slide><slide class=""><hgroup><h2>Tema 4.8 Ejercicios (4/2)</h2></hgroup><article  id="tema-4.8-ejercicios-42">
-
-<ul>
-<li><p>\(A\) o \(B\) = \(A \cup B\) = {H2, H4, H6, H3, H5, T2, T3, T5}.</p></li>
-<li><p>\(B\) y \(C\) = \(B \cap C\) = {T3, T5}.</p></li>
-<li><p>\(A\) y \(C\) son mutuamente excluyentes ya que \(A \cap C = \emptyset\).</p></li>
+<li>La probabilidad de que compre una camisa \(P(\text{Camisa})\) dado que es miembro \(P(\text{X})\). \[ P(\text{Camisa} | X) = \frac{P(\text{Camisa} \cap X)}{P(X)}= \frac{0.1}{0.2}=0.5  \]</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Revisión</h2></hgroup><article  id="revisión">
 
 <pre >## Versión: 09/04/2024</pre>
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Bibliografía</h2></hgroup><article  id="bibliografía">
-
-</article></slide><slide class=""><hgroup><h2>Bibliografía</h2></hgroup><article  id="bibliografía-1">
+</article></slide><slide class=""><hgroup><h2>Bibliografía</h2></hgroup><article  id="bibliografía">
 
 <ul>
 <li><p>Dodge, Y. (2008). The concise encyclopedia of statistics. Springer Science &amp; Business Media.</p></li>

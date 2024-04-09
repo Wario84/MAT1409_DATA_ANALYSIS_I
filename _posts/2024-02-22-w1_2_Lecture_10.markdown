@@ -16,7 +16,8 @@ mermaid: true
 **Tema 3 Representación Gráfica y Tabular.**
 
 
-3.7 Gráficsa en Excel.
+3.7 Gráficas en Excel.
+3.8 Instrucciones Tarea 03.
 
 
 # Presentación

@@ -12,11 +12,16 @@ mermaid: true
 
 # Temas
 
+**Tema 4 Introducción a la Probabilidad.**
 
-**Tema 3 Representación Gráfica y Tabular.**
-
-
-3.7 Gráficsa en Excel.
+4.1 Variables Aleatorias.
+4.2 Evento y Espacio de probabilidad.
+4.3 Axiomas de Probabilidad.
+4.4 Frecuencia relativa y probabilidad.
+4.5 Reglas de probabilidad elementales.
+4.6 Reglas de probabilidad elementales.
+4.7 Eventos Mutuamente Excluyentes.
+4.8 Eventos Mutuamente Independientes.
 
 
 # Presentación

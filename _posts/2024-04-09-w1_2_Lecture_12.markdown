@@ -1,0 +1,34 @@
+---
+
+layout: post
+title: "Lecture 12: Introducción a la Probabilidad."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-04-09"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 4 Introducción a la Probabilidad.**
+
+
+4.9 Probabilidad Condicional.
+4.10 Probabilidad Marginal.
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_12.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_12.html" download>
+  Bajar Presentación
+</a>
+
+
+
