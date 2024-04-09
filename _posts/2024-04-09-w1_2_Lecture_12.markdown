@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Lecture 12: Introducción a la Probabilidad."
+title: "Lecture 12: Probabilidad Condicional y Marginal."
 author: "Mario H. Gonzalez-Sauri"
 date: "2024-04-09"
 mermaid: true
