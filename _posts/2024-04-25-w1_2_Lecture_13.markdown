@@ -1,0 +1,39 @@
+---
+
+layout: post
+title: "Lecture 13: Introducción a las Distribuciones de Probabilidad."
+author: "Mario H. Gonzalez-Sauri"
+date: "2024-04-25"
+mermaid: true
+
+---
+
+<!--  FORMAT: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet -->
+
+# Temas
+
+
+**Tema 5 Distribuciones de Probabilidad.**
+
+
+Tema 5.1: Objetivos de las Distribuciones de Probabilidad.
+Tema 5.2: Usos de las Distribuciones de Probabilidad.
+Tema 5.3: Características de las Distribuciones de Probabilidad.
+Tema 5.4: Momentos de las Distribuciones de Probabilidad.
+5.5 Distribución Uniforme.
+5.6 Distribución Binomial
+5.7 Distribución de Poisson
+5.8 Distribución Normal
+
+
+# Presentación
+
+
+[Ver la presentación](https://raw.githack.com/Wario84/MAT1409_DATA_ANALYSIS_I/master/_posts/lectures/4_MAT1409_13.html)
+
+
+<a href="https://github.com/Wario84/MAT1409_DATA_ANALYSIS_I/blob/master/_posts/lectures/4_MAT1409_13.html" download>
+  Bajar Presentación
+</a>
+
+
